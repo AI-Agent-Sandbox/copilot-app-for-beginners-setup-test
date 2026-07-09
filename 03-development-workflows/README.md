@@ -13,7 +13,11 @@ weight: 4
 
 > **What if one supervised workflow carried a change from first edit all the way to a merge-ready pull request?**
 
-The GitHub Copilot App is strongest when you use it as a loop. In this chapter you'll work that loop in two halves. **Part A** is the inner loop on your machine: review, debug, test, and preview a change in `samples/book-app-web` with the evidence kept visible. **Part B** is the outer loop on GitHub: use My work as an inbox, start sessions from issues, open and review pull requests, and ask Copilot to fix review comments and failing checks. Both halves live in the same app, so you supervise the whole path without switching tools.
+The GitHub Copilot App is strongest when you use it as a loop. In this chapter you'll work with two parts of a loop:
+- **Part A** is the inner loop on your machine: review, debug, test, and preview a change in `samples/book-app-web`. 
+- **Part B** is the outer loop on GitHub: use **My work** as an inbox, start sessions from issues, open and review pull requests, and ask Copilot App to fix review comments and failing checks. 
+
+Both parts of the overall loop live in the same app, so you supervise the whole path without switching tools.
 
 ## 🎯 Learning Objectives
 
@@ -23,7 +27,7 @@ By the end of this chapter, you'll be able to:
 - Review, debug, and fix a small bug with tests and browser preview as proof
 - Ask Copilot to add tests and refactor safely behind them
 - Use rubber duck to critique work before you ship it
-- Use My work as an issue and pull request inbox
+- Use **My work** as an issue and pull request inbox
 - Start sessions from issues and open a pull request from the app
 - Ask Copilot to address review comments and failing checks
 - Explain why Agent Merge still needs human judgment
