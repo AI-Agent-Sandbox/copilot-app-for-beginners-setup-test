@@ -84,15 +84,17 @@ But a take isn't an album. A producer's review desk tracks briefs, approvals, no
 
 Next, confirm the sample app builds and tests cleanly. This is also where you'll learn to open the session terminal.
 
+> In this chapter, use **New session** (**+**) when you need a blank session. Use the **Create from** icon next to the project name when the exercise starts from a branch, issue, or pull request.
+
 1. In the sidebar, open a session for the `copilot-app-for-beginners` project, or create one with the **New session** (**+**) icon next to the project name.
 2. In the composer, set the **Mode** selector to **Interactive**, then submit:
 
    ```text
    Summarize the @samples/book-app-web project, including its framework, language, test framework, and build tool. Then tell me the commands to install dependencies, run tests, and build the app.
    ```
-2. Open the **Review panel** with the toggle in the upper-right corner of the app. This is where the session's terminal, diff, and browser surfaces live.
-3. Select the **Terminal** tab. If no terminal exists yet, press **+** to start one. You can also select **View → Toggle Terminal**.
-4. Run these commands from the repository root:
+3. Open the **Review panel** with the toggle in the upper-right corner of the app. This is where the session's terminal, diff, and browser surfaces live.
+4. Select the **Terminal** tab. If no terminal exists yet, press **+** to start one. You can also select **View → Toggle Terminal**.
+5. Run these commands from the repository root:
 
    ```bash
    cd samples/book-app-web
@@ -114,6 +116,8 @@ In these exercises, you'll:
 - **Part A (inner loop):** review, debug, test, refactor, and preview a change with the evidence visible
 - **Part B (outer loop):** find work in My work, start from an issue, open a pull request, and ask Copilot App to fix comments and checks
 
+> **Optional sections:** The Pick and Polish, Agent Merge, and parallel-session sections are optional but recommended for a complete experience.
+
 **Part A: Develop and validate in a session.** Work the inner loop: review, fix, test, and preview a change while the evidence stays visible.
 
 ### 1. Review and Fix a Bug
@@ -123,7 +127,7 @@ In this exercise you'll work on a practice branch that already contains a real b
 Perform these steps:
 
 1. Make sure the `practice-unread-count-bug` branch is ready (the [Chapter 00](../00-quick-start/README.md#2-fork-clone-and-prepare-the-course-repository) setup script created it). Prefer to set it up manually? See the [Issue 2 training-branch steps](../samples/app-course-issues.md#issue-2-keep-unread-stats-correct-when-filters-are-active).
-2. In the sidebar, select the **`Create from`** icon next to the `copilot-app-for-beginners` project, choose the **Branches** tab, and select `practice-unread-count-bug`. This starts a session on that branch in a new worktree.
+2. In the sidebar, select the **Create from** icon next to the `copilot-app-for-beginners` project, choose the **Branches** tab, and select `practice-unread-count-bug`. This starts a session on that branch in a new worktree.
 3. In the composer, set the **Mode** selector to **Plan**, then submit:
 
    ```text
@@ -241,7 +245,7 @@ Pick and Polish is the course name for a visible UI iteration loop: preview the 
 
 ![Pick and Polish UI iteration workflow](assets/pick-and-polish.webp)
 
-1. Start a session from the `practice-card-polish` branch (**`Create from`** → **Branches**).
+1. Start a session from the `practice-card-polish` branch (**Create from** → **Branches**).
 2. In the session terminal, install dependencies and start the app:
 
    ```bash
@@ -284,11 +288,21 @@ Open **My work**, your in-app inbox for GitHub issues, pull requests, review req
    repo:your-org-or-user/copilot-app-for-beginners is:pr is:open
    ```
 
-<!-- app-screenshot: My work view showing issue and pull request sections with filters, using a safe sample repository. -->
+<!-- Screenshot needed: assets/app-my-work-filtered.webp. Capture My work with the repository qualifier visible and safe issue/PR rows shown. -->
+
+#### Expected Output
+
+My work shows repository-backed issue and pull request rows. After you apply a qualifier, the visible rows should belong to your course fork and match the selected type.
 
 #### Success Check
 
-You're able to explain whether a missing issue or PR is more likely caused by filters, permissions, repository selection, or organization policy.
+Confirm that:
+
+1. The issue query shows open issues from your course fork.
+2. The PR query shows open pull requests from your course fork.
+3. Opening a row shows its title, repository, number, and current status.
+
+If an expected item is missing, check the active qualifier first, then repository access, permissions, and organization policy.
 
 ---
 
@@ -297,18 +311,19 @@ You're able to explain whether a missing issue or PR is more likely caused by fi
 Starting from an issue attaches its context automatically, so Copilot plans against the real task instead of a pasted summary.
 
 1. Choose Issue 1 (make search case-insensitive). Read it in My work, or see [`samples/app-course-issues.md`](../samples/app-course-issues.md#issue-1-make-search-case-insensitive). Use the `practice-search-case-bug` branch created by the setup script. If you skipped the script, apply Issue 1's training-branch diff first ([Chapter 02 practice branch note](../02-sessions-worktrees-context/README.md#branches-used-in-this-course)).
-2. Start a **Plan**-mode session from the issue and submit:
+2. From the issue, select **New session**, set the mode to **Plan**, and submit:
 
    ```text
    Use this issue as the source of truth. Plan a small fix in samples/book-app-web, list the files you expect to change, and name the tests or browser checks that should prove the issue is fixed. Do not edit until I approve the plan.
    ```
 
-<!-- app-screenshot: Issue detail page with New session button visible. -->
+<!-- Screenshot needed: assets/app-issue-new-session.webp. Capture Issue 1's detail view with the New session control visible. -->
 
 3. Approve the plan, switch to **Interactive**, apply and validate the fix (tests + browser) as you did in Part A.
-4. Use the app's PR flow to open a pull request. Before opening it, confirm the diff is focused, tests and build passed, browser behavior was checked if the UI changed, and the description explains the change and its validation.
+4. Before opening a pull request, review the **Changes** tab and confirm the session only changed files needed for the search fix.
+5. Use the app's PR flow to open a pull request. Confirm the description explains the change and only reports validation you actually observed.
 
-<!-- app-screenshot: Pull request Files changed tab or diff review surface inside the app. -->
+<!-- Screenshot needed: assets/app-pr-diff-review.webp. Capture the pull request diff or Files changed view for the focused search fix. -->
 
 #### Prompt for PR Description Help
 
@@ -320,11 +335,16 @@ Draft a pull request summary for this session. Include what changed, why it chan
 
 #### Expected Output
 
-Copilot plans against the issue, applies a focused fix after you approve the plan, and the app opens a pull request that carries your validated change.
+Before editing, the plan names the likely source and test files and identifies case-insensitive search as the target behavior. After you approve it, the pull request contains the focused fix and its regression test.
 
 #### Success Check
 
-The PR shows a focused diff, passing tests and build, and a description that matches the validation you actually performed.
+Confirm that:
+
+1. Searching with different letter casing returns the same matching books in the browser.
+2. `npm test -- --run` and `npm run build` complete successfully in this worktree.
+3. The PR's changed-files view contains only the focused implementation and test changes.
+4. The PR description lists the commands and browser check you actually performed.
 
 ---
 
@@ -338,13 +358,15 @@ A **guided fix** is simply asking Copilot to address a specific review comment o
 Review this PR conversation comment and propose the smallest change that addresses it. Show me the diff and validation plan before I accept the fix.
 ```
 
-<!-- app-screenshot: PR conversation comment or failing CI check in the app. -->
+<!-- Screenshot needed: assets/app-pr-review-comment.webp. Capture PR scenario 1 with the empty-state review comment visible. -->
 
 **Fix a failing check.** Open [PR scenario 2](../samples/app-course-pr-scenarios.md#pr-scenario-2-failing-ci-points-to-the-stats-test), which fails the `Book app web` workflow, then submit:
 
 ```text
 Analyze the failing check. Explain the failure, identify the likely file in samples/book-app-web, propose a minimal fix, and tell me which command should pass afterward.
 ```
+
+<!-- Screenshot needed: assets/app-pr-failing-check.webp. Capture PR scenario 2 with the failing Book app web check and failure details visible. -->
 
 When the failure is related to the sample app, confirm it locally before marking the PR ready:
 
@@ -358,11 +380,17 @@ npm run build
 
 #### Expected Output
 
-Copilot connects the comment to the right file and the failing check to its likely cause, proposing a minimal fix for each with the diff kept visible.
+For the review comment, Copilot should propose copy that mentions changing the search term, genre, or reading status. For the failing check, it should connect the failure in `src/tests/stats.test.tsx` to the favorite-count regression without changing the test expectation.
 
 #### Success Check
 
-The review comment is fully addressed, the failing check passes after your fix, and neither change touches anything unrelated.
+Confirm that:
+
+1. The revised empty state addresses the complete review comment, not only part of it.
+2. The stats fix restores favorite-count behavior without weakening or rewriting the failing expectation.
+3. Local tests and the build pass.
+4. The `Book app web` check reruns successfully.
+5. The final diff contains no unrelated files.
 
 <details>
 <summary>Advanced: Agent Merge</summary>

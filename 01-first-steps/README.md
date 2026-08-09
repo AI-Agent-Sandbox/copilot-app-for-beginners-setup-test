@@ -11,14 +11,15 @@ weight: 2
 
 ![Chapter 01: First Steps](assets/chapter-header.svg)
 
-> **What if you knew which app surface to use before you typed your next prompt?**
+> **What if agent work stopped bouncing you between chat, diffs, terminals, browser tabs, and pull requests?**
 
-Now that the app is installed and connected to the course repository, it's time for the control-room tour. You'll walk through the main navigation areas, compare Quick chats with project sessions, and see how session modes change Copilot's level of autonomy.
+Your editor is still a great place to write and debug code. Things get messy when an agent is involved: the plan lives in chat, the diff is somewhere else, tests run in a terminal, and the pull request sits in the browser. Now that the app is installed and connected to the course repository, this chapter starts with why a separate desktop app helps. Then you'll tour the main navigation, compare Quick chats with project sessions, and see how session modes change how much control you keep.
 
 ## 🎯 Learning Objectives
 
 By the end of this chapter, you'll be able to:
 
+- Explain the difference between GitHub Copilot App and a standard code editor
 - Navigate Home, My work, Automations, Search, Sessions, and Quick chats
 - Locate major settings areas such as General, Accounts, Sessions, Themes, Accessibility, and Voice dictation
 - Identify beginner-safe settings that affect safety, context, productivity, speed, and cost
@@ -26,13 +27,50 @@ By the end of this chapter, you'll be able to:
 - Select a model and reasoning effort based on task complexity
 - Understand how to use voice dictation
 
-> ⏱️ **Estimated Time**: ~35 minutes (15 min reading + 20 min hands-on)
+> ⏱️ **Estimated Time**: ~40 minutes (20 min reading + 20 min hands-on)
 
 ---
 
 ## ✅ Prerequisites
 
 Complete [Chapter 00](../00-quick-start/README.md) first. If you jumped straight here, pause and use Chapter 00 to fork and clone the course repository, run the training setup script, and connect the repository in the GitHub Copilot App.
+
+---
+
+## Why use the GitHub Copilot App?
+
+If you already use GitHub Copilot in VS Code or use Copilot CLI in the terminal, why bother with a separate app?
+
+### The challenge
+
+GitHub Copilot in the editor or terminal is excellent next to the code you already have open. VS Code can also open multi-root workspaces when you need more than one folder. The harder part is supervising agent work end to end: planning, isolated edits, tests, previews, issues, and pull requests. You end up piecing the story together yourself and asking "where was I?"
+
+| Challenge | What it feels like |
+|---|---|
+| Shared working copy | Two agent tasks touch the same folder and branch, and the changes blur together |
+| Scattered evidence | Plan in chat, diff in the editor, tests in a terminal, PR in the browser |
+| Unclear autonomy | You are guessing whether to steer every step, approve a plan first, or let Copilot run |
+| Explore versus change | A quick question and a real code change feel the same until files start changing |
+| Repeat work | You retype the same prompt every week for PR summaries, checks, or cleanup tasks |
+
+### The solution
+
+The GitHub Copilot App is designed to make that supervision loop easier. It is not a replacement for your editor, and it is not "multi-project support" by itself. Editors already handle multi-folder work. The app gives you a desktop place to run and review agent sessions, keep task evidence together, and move work through GitHub without hunting across tools.
+
+| Challenge | What the app adds |
+|---|---|
+| Scattered tools | Agent sessions, diffs, terminal output, browser previews, and GitHub work in one desktop app |
+| Shared working copy | Project sessions keep focused work separate (you'll learn about worktrees later) |
+| Unclear autonomy | Interactive, Plan, and Autopilot make the level of control obvious |
+| Explore versus change | Quick chats for safe questions; project sessions when you are ready to work in the repo |
+| Repeat work | Automations save a prompt and run it on demand, on a schedule, or from selected GitHub events |
+
+You still keep your editor. The app makes it easy to open the project in VS Code when you want to read code, debug, or edit by hand:
+
+- Stay in VS Code, JetBrains, or your usual editor for deep editing and the IDE workflow you already know
+- Open the GitHub Copilot App when you want to run agent sessions, pick a mode, review what changed, and move work through issues and pull requests
+- Jump back to VS Code from the app any time you want the full editor on the same project
+- Use Automations later for repeatable agent work you do not want to retype each time
 
 ---
 
@@ -68,6 +106,14 @@ The Copilot App works the same way:
 
 ![Session mode decision ladder](assets/session-mode-decision-ladder.webp)
 
+### Automations
+
+Sessions are for work you start and steer now. **Automations** are for work you want to reuse.
+
+An automation stores a prompt and a trigger so you do not rebuild the same agent run every time. Common first uses include summarizing open pull requests, checking a recurring validation step, or kicking off a known cleanup task. You can start with a manual run, then move to schedules or selected GitHub events when the prompt is trustworthy.
+
+For now, just notice **Automations** in the sidebar. You'll build one in [Chapter 06](../06-automations/README.md).
+
 ---
 
 ## Hands-On Exercises
@@ -91,6 +137,8 @@ Open GitHub Copilot App and notice these areas in the sidebar:
 6. Quick chats
 
 ![App sidebar with Home, My work, Automations, Search, Sessions, and Quick chats](assets/app-sidebar.webp)
+
+When you open **Automations**, you should see a place to create and manage saved agent runs. Do not build one yet. The goal is only to know where recurring work lives in the app.
 
 Now open **Settings** and locate:
 
@@ -279,10 +327,12 @@ Check your plan, organization policy, project settings, and app version.
 
 ## 🔑 Key Takeaways
 
-1. The app is organized around work surfaces: Home, My work, Search, Sessions, Quick chats, and Automations.
-2. **Quick chats** are for exploration. **Sessions** are for focused repository work.
-3. **Interactive**, **Plan**, and **Autopilot** change the level of autonomy.
-4. Model and reasoning choices affect speed, quality, and cost. Use enough capability for the task, but not more than needed.
+1. Keep your editor for deep coding. Open GitHub Copilot app when agent work needs a clearer place to run and review.
+2. From the app, you can open the project in VS Code any time you want the full editor.
+3. The app is organized around work surfaces: Home, My work, Search, Sessions, Quick chats, and Automations.
+4. **Quick chats** are for exploration. **Sessions** are for focused repository work. **Automations** are for repeatable agent runs.
+5. **Interactive**, **Plan**, and **Autopilot** change the level of autonomy.
+6. Model and reasoning choices affect speed, quality, and cost. Use enough capability for the task, but not more than needed.
 
 ---
 
