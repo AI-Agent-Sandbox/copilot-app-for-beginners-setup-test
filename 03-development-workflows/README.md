@@ -1,23 +1,13 @@
-<!--
----
-id: CopilotApp-03
-title: !translate Development and GitHub Workflows
-description: !translate Use the GitHub Copilot App for the full workflow: review, debug, test, and preview a change, then move it through issues, pull requests, review comments, and checks.
-audience: Developers / Students / Desktop users
-slug: development-and-github-workflows
-weight: 4
----
--->
-
 ![Chapter 03: Development and GitHub Workflows](assets/chapter-header.svg)
 
 > **What if one supervised workflow carried a change from first edit all the way to a merge-ready pull request?**
 
-The GitHub Copilot App is strongest when you use it as a loop. In this chapter you'll work with two parts of a loop:
-- **Part A** is the inner loop on your machine: review, debug, test, and preview a change in `samples/book-app-web`. 
-- **Part B** is the outer loop on GitHub: use **My work** as an inbox, start sessions from issues, open and review pull requests, and ask Copilot App to fix review comments and failing checks. 
+Chapters 01 and 02 gave you the control room and isolated sessions. This chapter puts them to work. The GitHub Copilot App is strongest when you use it as a loop:
 
-Both parts of the overall loop live in the same app, so you supervise the whole path without switching tools.
+- **Part A** is the inner loop on your machine: review, debug, test, and preview a change in `samples/book-app-web`.
+- **Part B** is the outer loop on GitHub: use **My work** as an inbox, start sessions from issues, open and review pull requests, and ask GitHub Copilot to fix review comments and failing checks.
+
+Both parts live in the same app, so you supervise the whole path without piecing the story together across tools.
 
 ## 🎯 Learning Objectives
 

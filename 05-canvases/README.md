@@ -1,19 +1,8 @@
-<!--
----
-id: CopilotApp-05
-title: !translate Canvases
-description: !translate Use shared canvas surfaces in the GitHub Copilot App to make agent work visible, inspectable, and steerable.
-audience: Developers / Students / Desktop users
-slug: canvases
-weight: 6
----
--->
-
 ![Chapter 05: Canvases](assets/chapter-header.svg)
 
 > **What if the agent's work was not trapped in a chat transcript?**
 
-Chat works well for conversation. Some work is easier to understand when it lives on a visible surface: A checklist, browser preview, terminal output, release board, or plan that both you and Copilot can update.
+Chat works well for conversation. Some work is easier to understand when it lives on a visible surface: A checklist, browser preview, terminal output, release board, or plan that both you and GitHub Copilot can update.
 
 That shared surface is a canvas. In this chapter, you'll inspect a prepared canvas concept first. Creating new canvas extensions is advanced and optional.
 

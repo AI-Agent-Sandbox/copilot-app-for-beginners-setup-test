@@ -1,19 +1,16 @@
-<!--
----
-id: CopilotApp-00
-title: !translate Quick Start
-description: !translate Install the GitHub Copilot App, sign in, connect the course repository, and verify a read-only Quick chat overview.
-audience: Developers / Students / Desktop users
-slug: quick-start
-weight: 1
----
--->
-
 ![Chapter 00: Quick Start](assets/chapter-header.svg)
 
 > **What if your first setup pass ended with a prepared training repo, a read-only Quick chat overview, and a first session you can inspect?**
 
-Welcome! This chapter gets the basics out of the way: Install the GitHub Copilot App, sign in, fork and clone the course repository, run the training setup script if you plan to complete the GitHub workflow chapters, connect the repository, and verify that Quick chat can explain the project without changing files. Once the app can see the repository, the hands-on agent workflows begin in Chapter 01.
+Welcome! This chapter gets the basics out of the way:
+
+- Install the GitHub Copilot App and sign in
+- Fork and clone the course repository
+- Run the training setup script so later chapters have issues, PRs, and practice branches ready
+- Connect the repository in the app
+- Verify that Quick chat can explain the project without changing files
+
+Once the app can see the repository, Chapter 01 explains why you'd use the app and starts the real hands-on path.
 
 ## 🎯 Learning Objectives
 
@@ -126,7 +123,7 @@ Forking gives you your own copy of the course repository so the setup script can
 
     > Note: Before running the setup script, review [appendices/training-github-scenarios.md](../appendices/training-github-scenarios.md) to see the issues, branches, pull requests, comments, and failing-check scenario it creates.
     >
-    > If you only want to complete Chapters 01 through 03, you can skip the script and connect a local clone instead.
+    > **Run this script.** Later chapters use the practice branches, issues, pull requests, review comments, and failing-check scenarios it creates. Skip it only if you will add those items yourself with the manual steps in the appendix.
 
     **Do a dry run of the setup script**
 
@@ -208,6 +205,8 @@ Quick chat is useful for exploration because it does not create a session branch
 
 ### 5. Create Your First Project Session
 
+This is a quick smoke test so you can see where project sessions live. Chapter 01 covers session modes in more depth.
+
 Create a new project session in Interactive mode by selecting the **+** next to `copilot-app-for-beginners` in the sidebar. In the session composer, choose **Interactive** from the mode selector and submit the following prompt.
 
 ```text
@@ -269,12 +268,13 @@ Check:
 2. Quick chat is safe for exploration since it doesn't create a branch or worktree
 3. Project sessions are where focused repository work begins
 4. This course uses `samples/book-app-web` as the main sample app path
+5. [Run the setup script](#2-fork-clone-and-prepare-the-course-repository) so later chapters have practice branches, issues, and pull request scenarios ready
 
 ---
 
 ## ➡️ What's Next
 
-In the next chapter, you'll tour the app interface, compare Quick chat with sessions, and learn when to use Interactive, Plan, and Autopilot modes.
+In the next chapter, you'll answer a practical question first: why use the GitHub Copilot App if you already use GitHub Copilot in an editor or terminal? Then you'll tour the interface, compare Quick chat with sessions, and learn when to use Interactive, Plan, and Autopilot modes.
 
 **[← Back to course README](../README.md)** | **[Continue to Chapter 01 →](../01-first-steps/README.md)**
 

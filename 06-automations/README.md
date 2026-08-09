@@ -1,17 +1,6 @@
-<!--
----
-id: CopilotApp-06
-title: !translate Automations
-description: !translate Turn repeatable Copilot prompts into manual, scheduled, and cloud automations with least-privilege tool selection.
-audience: Developers / Students / Desktop users
-slug: automations
-weight: 7
----
--->
-
 ![Chapter 06: Automations](assets/chapter-header.svg)
 
-> **What if your recurring Copilot prompt became a reusable button?**
+> **What if your recurring GitHub Copilot prompt became a reusable button?**
 
 Automations let you save repeatable agent work. You'll start with a manual automation that runs only when you choose. Scheduled, cloud, and issue-triggered automations appear later because they can involve policy, billing, and permission decisions.
 

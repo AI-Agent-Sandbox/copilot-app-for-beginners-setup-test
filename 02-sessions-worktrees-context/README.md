@@ -1,19 +1,8 @@
-<!--
----
-id: CopilotApp-02
-title: !translate Sessions, Worktrees, and Context
-description: !translate Start isolated worktree-backed sessions and give Copilot focused context with @, #, and / in the GitHub Copilot App.
-audience: Developers / Students / Desktop users
-slug: sessions-worktrees-and-context
-weight: 3
----
--->
-
 ![Chapter 02: Sessions, Worktrees, and Context](assets/chapter-header.svg)
 
 > **What if every task had its own workspace, branch, context, and history?**
 
-Sessions are where the GitHub Copilot App stops feeling like ordinary chat. A session can have its own branch, working folder, plan, diff, terminal output, browser preview, and GitHub context. In this chapter, you'll start a session from a task, learn how worktrees keep work separated, and practice giving Copilot proper context.
+In Chapter 01 you saw the "shared working copy" problem: two agent tasks can blur together in one folder and branch. Sessions are where the GitHub Copilot App stops feeling like ordinary chat. A session can have its own branch, working folder, plan, diff, terminal output, browser preview, and GitHub context. In this chapter, you'll start a session from a task, learn how worktrees keep work separated, and practice giving GitHub Copilot proper context.
 
 ## 🎯 Learning Objectives
 
@@ -82,7 +71,9 @@ The choices trade off speed against isolation:
 
 ![Where should this session run: local repo, new worktree, or cloud sandbox](assets/session-run-location-comparison.webp)
 
-> Tip: When in doubt, choose a new worktree. It keeps your `main` checkout clean while still running on your machine, which is why the rest of this course leans on worktree-backed sessions. 
+> Tip: When in doubt, choose a new worktree. It keeps your `main` checkout clean while still running on your machine, which is why the rest of this course leans on worktree-backed sessions.
+
+Worktrees separate **files and branches**. They do not separate everything on your machine. Dev servers, databases, and ports can still collide if two sessions use the same ones. When you run more than one app preview later, use different ports.
 
 ### Session Settings That Matter Here
 
@@ -251,10 +242,10 @@ Perform these steps:
 
 3. Switch to Plan mode in the composer. Although this session wasn't started from an existing issue or PR, you can use the `#` reference to access them.
 4. Type `#` into the composer. Notice that all of the issues and PRs associated with the repository appear.
-5. Select one of the issues from the list. You should see something like `#1` (depending on the issue you selected) appear in the composer. 
-6. Submit it and a plan will be created to fix the issue.
+5. Select one of the issues from the list. You should see something like `#1` (depending on the issue you selected) appear in the composer.
+6. Add a short instruction such as `Propose a plan only. Do not edit files.` then submit.
 
-   > Note: Depending on the issue you selected, you may be prompted to change to a different branch. Press escape to exit if asked. 
+   > Note: Depending on the issue you selected, you may be prompted to change to a different branch. Press escape to exit if asked. Stay in Plan mode and do not approve edits yet. The goal is to practice `#` context, not to finish the issue. 
 
 #### Expected Output
 
@@ -278,9 +269,11 @@ Perform these steps:
 
    ![App Issues Dialog](assets/app-issues-dialog.webp)
 
+4. Review the plan. Do not approve implementation yet. The goal is to practice starting from an issue with context attached.
+
 #### Expected Output
 
-Copilot should analyze the issue and generate a plan that you can then review and approve before making any changes.
+Copilot should analyze the issue and generate a plan that you can review before making any changes.
 
 ---
 
@@ -403,7 +396,7 @@ Then answer:
 
 ## ➡️ What's Next
 
-In the next chapter, you'll use the app for common development workflows: Review, debugging, tests, terminal validation, browser preview, and UI polish.
+In the next chapter, you'll use isolated sessions for real development work. Part A covers the inner loop: review, debug, test, and browser preview. Part B covers the outer loop: My work, issues, pull requests, review comments, and checks.
 
 **[← Back to Chapter 01](../01-first-steps/README.md)** | **[Continue to Chapter 03 →](../03-development-workflows/README.md)**
 

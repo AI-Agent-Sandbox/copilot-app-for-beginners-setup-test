@@ -1,19 +1,8 @@
-<!--
----
-id: CopilotApp-04
-title: !translate Skills, MCP Servers, and Plugins
-description: !translate Extend the GitHub Copilot App with repo-local skills, and learn where optional MCP servers, plugins, and custom agents fit.
-audience: Developers / Students / Desktop users
-slug: skills-mcp-servers-and-plugins
-weight: 5
----
--->
-
 ![Chapter 04: Skills, Model Context Protocol Servers, and Plugins](assets/chapter-header.svg)
 
-> **What if Copilot could reuse your team's review checklist without gaining any new external access?**
+> **What if GitHub Copilot could reuse your team's review checklist without gaining any new external access?**
 
-This chapter starts with the safest extension point: Repo-local skills. A skill is reusable guidance stored in the repository. It helps Copilot approach a task consistently while keeping the beginner path local, reviewable, and credential-free.
+This chapter starts with the safest extension point: Repo-local skills. A skill is reusable guidance stored in the repository. It helps GitHub Copilot approach a task consistently while keeping the beginner path local, reviewable, and credential-free.
 
 Model Context Protocol (MCP) servers, plugins, model providers, and custom agents are useful too, but they introduce extra setup, permissions, or policy decisions. You'll see them later in collapsible optional sections.
 

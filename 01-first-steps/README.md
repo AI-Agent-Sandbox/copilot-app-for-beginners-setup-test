@@ -1,28 +1,16 @@
-<!--
----
-id: CopilotApp-01
-title: !translate First Steps
-description: !translate Tour the GitHub Copilot App interface, compare Quick chats with sessions, and learn when to use Interactive, Plan, and Autopilot modes.
-audience: Developers / Students / Desktop users
-slug: first-steps
-weight: 2
----
--->
-
 ![Chapter 01: First Steps](assets/chapter-header.svg)
 
 > **What if agent work stopped bouncing you between chat, diffs, terminals, browser tabs, and pull requests?**
 
-Your editor is still a great place to write and debug code. Things get messy when an agent is involved: the plan lives in chat, the diff is somewhere else, tests run in a terminal, and the pull request sits in the browser. Now that the app is installed and connected to the course repository, this chapter starts with why a separate desktop app helps. Then you'll tour the main navigation, compare Quick chats with project sessions, and see how session modes change how much control you keep.
+Now that the app is installed and connected to the course repository, this chapter answers why the desktop app helps if you already use GitHub Copilot in an editor or terminal. Then you'll tour the main navigation, compare Quick chats with project sessions, and see how session modes change how much control you keep.
 
 ## 🎯 Learning Objectives
 
 By the end of this chapter, you'll be able to:
 
-- Explain the difference between GitHub Copilot App and a standard code editor
+- Explain when the GitHub Copilot App helps beyond using Copilot in an editor or Copilot CLI in the terminal
 - Navigate Home, My work, Automations, Search, Sessions, and Quick chats
 - Locate major settings areas such as General, Accounts, Sessions, Themes, Accessibility, and Voice dictation
-- Identify beginner-safe settings that affect safety, context, productivity, speed, and cost
 - Explain Interactive, Plan, and Autopilot
 - Select a model and reasoning effort based on task complexity
 - Understand how to use voice dictation
@@ -370,7 +358,7 @@ Create a small mode map for the Book App. The goal is to use the app surfaces fr
 
 ## ➡️ What's Next
 
-In the next chapter, you'll start using project sessions, learn what worktrees are, and learn how to provide focused context with `@`, `#`, and `/`.
+In the next chapter, you'll solve the "shared working copy" challenge from this chapter: isolated sessions with worktrees, plus focused context with `@`, `#`, and `/`.
 
 **[← Back to Chapter 00](../00-quick-start/README.md)** | **[Continue to Chapter 02 →](../02-sessions-worktrees-context/README.md)**
 

@@ -1,14 +1,3 @@
-<!--
----
-id: CopilotApp-ROOT
-title: !translate GitHub Copilot App for Beginners
-description: !translate Learn to direct and orchestrate AI coding agents from a single desktop app.
-audience: Developers / Students / Desktop users
-slug: copilot-app-for-beginners
-weight: 0
----
--->
-
 ![GitHub Copilot App for Beginners](assets/course-hero-command-center.webp)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)&ensp;
@@ -76,7 +65,7 @@ This course focuses on the GitHub Copilot App. Along the way, you'll see how it 
 | Chapter | Title | What learners do |
 |:--:|---|---|
 | 00 | 🚀 [Quick Start](./00-quick-start/README.md) | Prepare the course environment and verify a Quick chat |
-| 01 | 👋 [First Steps](./01-first-steps/README.md) | Learn the UI, Quick chats, settings, sessions, modes, and model controls |
+| 01 | 👋 [First Steps](./01-first-steps/README.md) | Learn why you'd use the app, then tour key features: UI, Quick chats, settings, sessions, modes, and model controls |
 | 02 | 🌳 [Sessions, Worktrees, and Context](./02-sessions-worktrees-context/README.md) | Start isolated sessions and use `@`, `#`, and `/` for context |
 | 03 | ⚡ [Development and GitHub Workflows](./03-development-workflows/README.md) | Review, debug, test, and preview a change, then move it through My work, issues, PRs, review comments, checks, guided fixes, and advanced Agent Merge |
 | 04 | 🧰 [Skills, Model Context Protocol (MCP) Servers, and Plugins](./04-skills-mcp-plugins/README.md) | Add reusable expertise and optional tool integrations |
