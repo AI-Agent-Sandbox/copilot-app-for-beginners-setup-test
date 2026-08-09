@@ -68,9 +68,9 @@ This course focuses on the GitHub Copilot App. Along the way, you'll see how it 
 | 01 | 👋 [First Steps](./01-first-steps/README.md) | Learn why you'd use the app, then tour key features: UI, Quick chats, settings, sessions, modes, and model controls |
 | 02 | 🌳 [Sessions, Worktrees, and Context](./02-sessions-worktrees-context/README.md) | Start isolated sessions and use `@`, `#`, and `/` for context |
 | 03 | ⚡ [Development and GitHub Workflows](./03-development-workflows/README.md) | Review, debug, test, and preview a change, then move it through My work, issues, PRs, review comments, checks, guided fixes, and advanced Agent Merge |
-| 04 | 🧰 [Skills, Model Context Protocol (MCP) Servers, and Plugins](./04-skills-mcp-plugins/README.md) | Add reusable expertise and optional tool integrations |
-| 05 | 🖼️ [Canvases](./05-canvases/README.md) | Use shared visual work surfaces |
-| 06 | 🔁 [Automations](./06-automations/README.md) | Create manual, scheduled, and advanced cloud automations |
+| 04 | 🧰 [Skills, Model Context Protocol (MCP) Servers, and Plugins](./04-skills-mcp-plugins/README.md) | Start with repo-local skills, then learn optional MCP servers, plugins, and agents |
+| 05 | 🖼️ [Canvases](./05-canvases/README.md) | Use session canvases and a plan + validation board as a shared control panel |
+| 06 | 🔁 [Automations](./06-automations/README.md) | Start with a manual open-work summary, then learn schedules and advanced cloud automations |
 
 ## 📖 How This Course Works
 

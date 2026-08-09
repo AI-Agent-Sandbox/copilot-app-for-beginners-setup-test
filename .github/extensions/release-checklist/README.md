@@ -1,18 +1,18 @@
 # Release Checklist Canvas Concept
 
-This folder contains the prepared release checklist canvas concept used in Chapter 05. It is intentionally lightweight so beginners can understand the canvas workflow before building or installing a working extension.
+This folder is optional fallback material for Chapter 05. The main beginner example in that chapter is a **session plan + validation board** tied to a live GitHub Copilot App session.
 
-This is not a loadable canvas extension yet. It is a design concept for the course exercise.
+This folder is intentionally lightweight. It is a design concept, not a loadable canvas extension.
 
 ## Goal
 
-Create a guided release checklist for the sample app that helps learners verify:
+Describe a release-oriented checklist for the sample app that helps learners verify:
 
-- Tests passed.
-- Build passed.
-- The browser was checked.
-- Review comments were resolved.
-- Intentional training failures were not left in the default branch.
+- Tests passed
+- Build passed
+- The browser was checked
+- Review comments were resolved
+- Intentional training failures were not left in the default branch
 
 ## Possible canvas sections
 
@@ -24,4 +24,4 @@ Create a guided release checklist for the sample app that helps learners verify:
 
 ## Course use
 
-Use this concept when introducing canvas extensions as an intermediate topic. Learners can discuss the shape of a useful canvas before building one.
+Use this concept only as a comparison shape after the session plan + validation board. Prefer session-linked boards for the beginner path because they stay tied to live plan, terminal, and browser evidence.

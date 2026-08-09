@@ -2,7 +2,9 @@
 
 > **What if your recurring GitHub Copilot prompt became a reusable button?**
 
-Automations let you save repeatable agent work. You'll start with a manual automation that runs only when you choose. Scheduled, cloud, and issue-triggered automations appear later because they can involve policy, billing, and permission decisions.
+Chapter 05 made session work visible with canvases. This chapter makes repeatable work reusable.
+
+Automations let you save agent tasks in the GitHub Copilot App and run them on demand or later on a schedule. You'll start with a manual open-work summary that runs only when you choose. Scheduled, cloud, and issue-triggered automations appear later because they can involve policy, billing, and permission decisions.
 
 ## 🎯 Learning Objectives
 
@@ -25,8 +27,10 @@ Before starting:
 
 - Complete Chapter 05
 - Open the course repository in the GitHub Copilot App
+- Run the Chapter 00 setup script so practice issues and pull requests exist
 - Use `samples/book-app-web` for validation examples
-- Have a GitHub-backed repository if you want live PR or issue summaries
+
+If you skipped the setup script earlier, [run it now](../00-quick-start/README.md#2-fork-clone-and-prepare-the-course-repository) before the first automation exercise. The open-work summary needs real issues or pull requests to inspect.
 
 ---
 
@@ -73,36 +77,49 @@ Manual automations run on demand. They're the safest first step because you can:
 - avoid surprise runs
 - confirm tools are minimal
 
+### A Good Beginner Automation
+
+Pick work you already do more than once:
+
+- "What open issues and pull requests need attention?"
+- "What validation steps should I run before opening a PR?"
+
+Avoid first automations that write code, post comments, change labels, approve reviews, or merge pull requests.
+
+> 💡 **Tip**: Automations are saved in the app, not committed with the repository. Treat the prompt like production instructions: keep secrets out of it, and give the automation only the tools it needs.
+
 ---
 
 ## Hands-On Exercises
 
 In these exercises, you'll:
 
-- Create a manual PR summary automation
+- Create a manual open-work summary automation
 - Run it and inspect its history
-- Create a manual validation reminder automation
+- Create a second manual validation checklist automation
 
-### 1. Create a Manual PR Summary Automation
+### 1. Create a Manual Open-Work Summary
 
-This exercise works best after Chapter 03 has created at least one PR. If your training repository has no open PRs yet, skip to the local validation reminder in Exercise 3, then come back later.
+This is the main beginner automation for the chapter. It answers a real daily question: what needs attention in this repository right now?
 
 Create an automation named:
 
 ```text
-Book app PR summary
+Course repo open work summary
 ```
 
 Use a manual trigger.
 
-Use this UI path if your app exposes automation creation: Open **Automations**, choose **New automation**, select **Manual trigger**, paste the prompt, select the smallest read-only tool set, save, then run it.
+Use this UI path if your app exposes automation creation: open **Automations**, choose **New automation**, select **Manual trigger**, paste the prompt, select the smallest read-only tool set, save, then run it.
 
 <!-- app-screenshot: New automation form showing trigger choices such as Manual, On a schedule, and When an issue is created. -->
 
 Use this prompt:
 
 ```text
-Summarize open pull requests for this training repository. Focus on PR title, current status, failing checks if visible, and the next human review action. Do not modify files, create comments, approve reviews, or merge anything.
+Summarize open issues and open pull requests in this repository.
+For each item, include: number, title, status, and the next human action.
+Do not edit files, add comments, change labels, approve reviews, or merge anything.
 ```
 
 Tool guidance:
@@ -113,13 +130,13 @@ Tool guidance:
 
 #### Expected Output
 
-The run should produce a short PR summary and a suggested next human action.
+The run should produce a short list of open issues and pull requests, plus a suggested next human action for each item.
 
-Demo output varies. Repository state, permissions, and available tools will change the result.
+Demo output varies. Repository state, permissions, and available tools will change the result. If the list is empty, confirm the Chapter 00 setup script created practice issues and pull requests, then check repository permissions.
 
 #### How It Works
 
-The automation saves the prompt and trigger so you can run the same bounded task again later. The selected tools control what the agent can inspect or do.
+The automation saves the prompt and trigger so you can run the same bounded task again later. The selected tools control what the agent can inspect. Because the prompt is read-only, the risk stays low while you learn the review loop.
 
 ---
 
@@ -151,12 +168,12 @@ Before editing the automation, ask:
 
 ---
 
-### 3. Create a Manual Validation Reminder
+### 3. Create a Manual Validation Checklist
 
-Create another manual automation for local project validation:
+Create a second manual automation for local project validation:
 
 ```text
-Book app validation reminder
+Book app validation checklist
 ```
 
 Prompt:
@@ -183,16 +200,25 @@ The automation should return a checklist. It should not modify files or run comm
 
 Demo output varies, but the commands should remain exact.
 
+#### Why Keep Both Automations
+
+| Automation | Best for |
+|---|---|
+| Course repo open work summary | "What needs attention on GitHub?" |
+| Book app validation checklist | "What should I verify before a PR?" |
+
+Together they cover the two most common pre-handoff checks without writing anything for you.
+
 ---
 
 <details>
 <summary>Intermediate: Scheduled automations</summary>
 
-After a manual automation works reliably, you can consider a schedule.
+After the manual open-work summary works reliably, you can consider a schedule.
 
 Good candidates:
 
-- daily PR summary
+- daily open-work summary for the same repository
 - weekly dependency review summary
 - morning issue triage summary
 
@@ -204,6 +230,8 @@ Before scheduling, narrow:
 - branch or label filters
 - read/write tools
 - expected output format
+
+A practical next step is to schedule the same open-work summary once a day, then check the run history the next morning. If the summary is noisy, tighten the prompt before adding more triggers.
 
 </details>
 
@@ -217,8 +245,9 @@ Cloud automations can run when your machine is off, but they can depend on:
 - billing
 - selected tools
 - permissions
+- private or internal repository access for some cloud flows
 
-Use cloud automations only after the manual version works and after you understand the permission model.
+Use cloud automations only after the manual version works and after you understand the permission model. If cloud automations are unavailable on a public fork, stay on local manual runs for this course.
 
 ![Local versus cloud automations](assets/local-vs-cloud-automations.webp)
 
@@ -253,8 +282,8 @@ If an issue-triggered automation fires too often, narrow the issue search query,
 | Problem | What to check |
 |---|---|
 | Local automation does not run | App availability, project still connected, local tools and credentials |
-| PR summary is empty | Repository permissions, filters, whether there are open PRs |
-| Cloud automation unavailable | Organization policy, repository settings, billing, selected tools |
+| Open-work summary is empty | Setup script completed, repository permissions, filters, whether issues or PRs are open |
+| Cloud automation unavailable | Organization policy, repository settings, billing, selected tools, public vs private repository limits |
 | Scheduled run is noisy | Prompt scope, schedule frequency, repository or label filters |
 | Automation made surprising suggestions | Remove tools, make the prompt more bounded, add explicit non-goals |
 
@@ -267,9 +296,10 @@ If an issue-triggered automation fires too often, narrow the issue search query,
 1. Automations turn repeatable prompts into reusable runs.
 2. Manual automations are the safest first step.
 3. Every automation needs a trigger, prompt, tool set, and review path.
-4. Scheduled automations are intermediate because they run without you clicking each time.
-5. Cloud and issue-triggered automations are advanced because policy, billing, and permissions matter.
-6. Apply least privilege: give an automation only the tools it needs, and keep write actions out of early automations that read issue content, which can carry prompt-injection risk.
+4. An open-work summary is a strong beginner automation because it is useful, read-only, and easy to review.
+5. Scheduled automations are intermediate because they run without you clicking each time.
+6. Cloud and issue-triggered automations are advanced because policy, billing, and permissions matter.
+7. Apply least privilege: give an automation only the tools it needs, and keep write actions out of early automations that read issue content, which can carry prompt-injection risk.
 
 ---
 
@@ -314,5 +344,6 @@ That last habit is the whole point: human judgment stays in the loop at every ma
 ## Source References
 
 - [Using automations in the GitHub Copilot App](https://docs.github.com/en/copilot/how-tos/github-copilot-app/using-automations)
+- [About automations in the GitHub Copilot App](https://docs.github.com/en/copilot/concepts/github-copilot-app/about-automations)
 - [GitHub Copilot App generally available](https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available/)
 - [GitHub Copilot App product blog](https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/)
