@@ -67,6 +67,13 @@ An automation has four beginner-friendly parts:
 
 ![Automation trigger to agent run](assets/automation-trigger-to-run.webp)
 
+### Local versus cloud, in one line
+
+- **Local automation**: runs from your machine while the app can reach the project
+- **Cloud automation**: can run on GitHub-hosted infrastructure when policy and repository settings allow it
+
+Start local and manual. Add cloud only after the prompt is trustworthy.
+
 ### Start Manual
 
 Manual automations run on demand. They're the safest first step because you can:
@@ -87,6 +94,8 @@ Pick work you already do more than once:
 Avoid first automations that write code, post comments, change labels, approve reviews, or merge pull requests.
 
 > 💡 **Tip**: Automations are saved in the app, not committed with the repository. Treat the prompt like production instructions: keep secrets out of it, and give the automation only the tools it needs.
+>
+> Issue titles and bodies can contain untrusted text. A read-only summary is safer than an automation that posts comments or edits the repository. That reduces **prompt-injection** risk, where hostile text tries to steer the agent.
 
 ---
 
@@ -110,7 +119,17 @@ Course repo open work summary
 
 Use a manual trigger.
 
-Use this UI path if your app exposes automation creation: open **Automations**, choose **New automation**, select **Manual trigger**, paste the prompt, select the smallest read-only tool set, save, then run it.
+Create it with this path:
+
+1. Open **Automations** in the sidebar.
+2. Choose **New automation**.
+3. Select **Manual** as the trigger.
+4. Paste the prompt below.
+5. Select the smallest read-only tool set available.
+6. Prefer **local** if the app offers local versus cloud.
+7. Save, then run it with the play control.
+
+If a control label differs slightly by app version, stay on Manual + read-only tools and the same prompt.
 
 <!-- app-screenshot: New automation form showing trigger choices such as Manual, On a schedule, and When an issue is created. -->
 
@@ -299,7 +318,7 @@ If an issue-triggered automation fires too often, narrow the issue search query,
 4. An open-work summary is a strong beginner automation because it is useful, read-only, and easy to review.
 5. Scheduled automations are intermediate because they run without you clicking each time.
 6. Cloud and issue-triggered automations are advanced because policy, billing, and permissions matter.
-7. Apply least privilege: give an automation only the tools it needs, and keep write actions out of early automations that read issue content, which can carry prompt-injection risk.
+7. Apply least privilege: give an automation only the tools it needs. Keep write actions out of early automations that read issue content, so untrusted text is less able to steer the agent.
 
 ---
 
@@ -344,6 +363,6 @@ That last habit is the whole point: human judgment stays in the loop at every ma
 ## Source References
 
 - [Using automations in the GitHub Copilot App](https://docs.github.com/en/copilot/how-tos/github-copilot-app/using-automations)
-- [About automations in the GitHub Copilot App](https://docs.github.com/en/copilot/concepts/github-copilot-app/about-automations)
+- [About automations in the GitHub Copilot App](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-automations)
 - [GitHub Copilot App generally available](https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available/)
 - [GitHub Copilot App product blog](https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/)

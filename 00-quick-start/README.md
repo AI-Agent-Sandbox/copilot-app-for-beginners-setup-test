@@ -6,7 +6,7 @@ Welcome! This chapter gets the basics out of the way:
 
 - Install the GitHub Copilot App and sign in
 - Fork and clone the course repository
-- Run the training setup script so later chapters have issues, PRs, and practice branches ready
+- Run the training setup script so later chapters have issues, pull requests (PRs), and practice branches ready
 - Connect the repository in the app
 - Verify that Quick chat can explain the project without changing files
 
@@ -38,6 +38,17 @@ By the end of this chapter, you'll be able to:
 - Permission to use the app if your account belongs to a GitHub Copilot Business or Enterprise organization
 
 > Note: A paid Copilot plan is required for the app. Business or Enterprise users may also need an administrator to enable the Copilot CLI policy or related app policies.
+
+Quick checks before you continue (run these in a terminal):
+
+```bash
+git --version
+node -v
+npm -v
+gh --version
+```
+
+You should see a version number for each command. Install anything that is missing before the setup script step.
 
 ---
 
@@ -157,7 +168,7 @@ Forking gives you your own copy of the course repository so the setup script can
 
 #### Success Check
 
-You've got a local clone of your fork, and the setup script completed or you intentionally chose the local-only path.
+You've got a local clone of your fork, and the setup script finished successfully. If you could not run the script, complete the manual steps in [appendices/training-github-scenarios.md](../appendices/training-github-scenarios.md) before Chapters 02 and 03.
 
 ---
 
@@ -264,7 +275,7 @@ Check:
 
 ## 🔑 Key Takeaways
 
-1. The GitHub Copilot App is a desktop control center for agentic coding work
+1. The GitHub Copilot App is a desktop control center for agent-driven coding work
 2. Quick chat is safe for exploration since it doesn't create a branch or worktree
 3. Project sessions are where focused repository work begins
 4. This course uses `samples/book-app-web` as the main sample app path

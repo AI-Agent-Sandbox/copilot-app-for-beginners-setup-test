@@ -4,9 +4,11 @@
 
 Chapter 03 put you through a full supervised loop: change, evidence, issue, pull request. This chapter adds the next layer: reusable expertise.
 
+**Today's required path is skills.** Model Context Protocol (MCP) servers, plugins, and custom agents are only a map for later.
+
 In the GitHub Copilot App, the safest extension point is a **repo-local skill**. A skill is a folder of guidance GitHub Copilot can load when a task matches. It keeps the beginner path local, reviewable in git, and free of new credentials.
 
-Model Context Protocol (MCP) servers, plugins, model providers, and custom agents are useful too. They also add setup, permissions, or policy decisions. Those stay optional in collapsible sections so you can learn the map without leaving the beginner path.
+MCP servers, plugins, model providers, and custom agents are useful too. They also add setup, permissions, or policy decisions. Those stay optional in collapsible sections so you can learn the map without leaving the beginner path.
 
 ## 🎯 Learning Objectives
 
@@ -145,7 +147,7 @@ GitHub Copilot can use the skill when your prompt matches the skill description.
 
 Some installed skills also appear as direct slash commands, such as `/skill-name`. Those commands vary by environment, so treat the slash palette as the source of truth.
 
-If you're unsure whether the skill was used, explicitly name `book-app-reviewer` in the prompt and ask which checklist items from the skill it considered.
+> 💡 **Tip**: Skills do not always attach automatically. If the reply looks generic, name `book-app-reviewer` in the prompt and ask which checklist items from the skill it considered. That is normal, not a failed exercise.
 
 ---
 
@@ -235,7 +237,7 @@ If an MCP server does not work, check authentication, environment variables, ena
 <details>
 <summary>Intermediate: Plugins, model providers, and model strategy</summary>
 
-Plugins are installable packages that can add skills, hooks, custom agents, or other capabilities. Browse them under **Settings → Plugins**.
+Plugins are installable packages that can add skills, hooks (small automated reactions to app events), custom agents, or other capabilities. Browse them under **Settings → Plugins**.
 
 Model providers can affect which models are available to sessions. Do not require plugin installation for this chapter. Learn where the controls are and how to disable capabilities you do not need.
 

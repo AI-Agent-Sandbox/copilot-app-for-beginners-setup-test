@@ -15,14 +15,14 @@ By the end of this chapter, you'll be able to:
 
 - Use repository instructions and the Review panel (diff, terminal, browser) as your evidence surfaces
 - Review, debug, and fix a small bug with tests and browser preview as proof
-- Ask Copilot to add tests and refactor safely behind them
+- Ask GitHub Copilot to add tests and refactor safely behind them
 - Use rubber duck to critique work before you ship it
 - Use **My work** as an issue and pull request inbox
 - Start sessions from issues and open a pull request from the app
-- Ask Copilot to address review comments and failing checks
+- Ask GitHub Copilot to address review comments and failing checks
 - Explain why Agent Merge still needs human judgment
 
-> ⏱️ **Estimated Time**: ~90 minutes (30 min reading + 60 min hands-on). 
+> ⏱️ **Estimated Time**: ~90 minutes for the full chapter (30 min reading + 60 min hands-on). The required Part A and Part B path is enough for beginners; optional advanced sections can wait.
 
 ---
 
@@ -55,8 +55,8 @@ But a take isn't an album. A producer's review desk tracks briefs, approvals, no
 | Rubber duck | A critic agent that reviews a plan, diff, or tests before you accept them |
 | My work | An app view for GitHub issues, pull requests, review requests, and checks |
 | Guided fix | Asking Copilot to address a specific review comment or failing check, with the diff and validation kept visible |
-| CI check | An automated validation run, often from GitHub Actions |
-| Agent Merge | An advanced finishing workflow that helps carry a PR to merge-readiness |
+| CI check | Continuous integration check: an automated validation run on your pull request, often from GitHub Actions |
+| Agent Merge | An advanced finishing workflow that helps carry a pull request to merge-readiness |
 
 ![Development loop in the GitHub Copilot App](assets/development-loop.webp)
 
@@ -66,11 +66,11 @@ But a take isn't an album. A producer's review desk tracks briefs, approvals, no
 
 ## Prepare Repository Instructions and the Sample App
 
-**Repository instructions** give Copilot stable project guidance before it edits anything. This repo already includes `.github/copilot-instructions.md`. Open it and confirm it mentions `samples/book-app-web`; React, TypeScript, Vite, and Vitest; small beginner-readable changes; and validation with install, test, build, and browser preview.
+**Repository instructions** give GitHub Copilot stable project guidance before it edits anything. This repo already includes `.github/copilot-instructions.md`. Open it and confirm it mentions `samples/book-app-web`; React, TypeScript, Vite, and Vitest; small beginner-readable changes; and validation with install, test, build, and browser preview.
 
 ![Better context layers for Copilot](assets/context-layers.webp)
 
-> Where these live in the app: open **Settings**, then set **global** instructions under **General**, and **repository-specific** instructions under the repository name in the **Projects** section. The committed `.github/copilot-instructions.md` file is the git-reviewable form of repository instructions that Copilot reads automatically.
+> Where these live in the app: open **Settings**, then set **global** instructions under **General**, and **repository-specific** instructions under the repository name in the **Projects** section. The committed `.github/copilot-instructions.md` file is the git-reviewable form of repository instructions that GitHub Copilot reads automatically.
 
 Next, confirm the sample app builds and tests cleanly. This is also where you'll learn to open the session terminal.
 
@@ -106,7 +106,7 @@ In these exercises, you'll:
 - **Part A (inner loop):** review, debug, test, refactor, and preview a change with the evidence visible
 - **Part B (outer loop):** find work in My work, start from an issue, open a pull request, and ask Copilot App to fix comments and checks
 
-> **Optional sections:** The Pick and Polish, Agent Merge, and parallel-session sections are optional but recommended for a complete experience.
+> **Optional sections:** Pick and Polish is recommended if you want extra UI practice. Agent Merge and parallel sessions (`/orchestrate`) are advanced. Skip them unless you're curious after you finish the required Part A and Part B exercises.
 
 **Part A: Develop and validate in a session.** Work the inner loop: review, fix, test, and preview a change while the evidence stays visible.
 
@@ -170,7 +170,7 @@ Copilot should produce a specific, testable review, then make a focused fix, exp
 
 ### 2. Lock the Fix in with Tests
 
-Tests lock in the fix so it can't silently regress. Ask Copilot to add a test that fails on the old behavior and passes on your fix.
+Tests lock in the fix so it can't silently regress. Ask GitHub Copilot to add a test that fails on the old behavior and passes on your fix.
 
 1. Stay in the same **Interactive** session on the `practice-unread-count-bug` branch.
 2. Submit:
@@ -338,9 +338,9 @@ Confirm that:
 
 ---
 
-### 6. Ask Copilot to Fix Comments and Checks
+### 6. Ask GitHub Copilot to Fix Comments and Checks
 
-A **guided fix** is simply asking Copilot to address a specific review comment or failing check, with the diff and validation kept visible.
+A **guided fix** is simply asking GitHub Copilot to address a specific review comment or failing check, with the diff and validation kept visible.
 
 **Respond to a review comment.** Open the PR conversation comment from [PR scenario 1](../samples/app-course-pr-scenarios.md#pr-scenario-1-review-comment-asks-for-clearer-empty-state-copy), which asks for clearer empty-state copy, then submit:
 
@@ -383,9 +383,11 @@ Confirm that:
 5. The final diff contains no unrelated files.
 
 <details>
-<summary>Advanced: Agent Merge</summary>
+<summary>Advanced (optional): Agent Merge</summary>
 
-Agent Merge is an advanced finishing workflow that can help carry a PR through review comments, checks, and merge requirements. It is not a substitute for understanding the work.
+Skip this section on a first pass if Part B already felt like enough.
+
+Agent Merge is an advanced finishing workflow that can help carry a pull request through review comments, checks, and merge requirements. It is not a substitute for understanding the work.
 
 ![Human judgment stays in the loop](assets/human-judgment-loop.webp)
 
@@ -400,7 +402,9 @@ If your app exposes `/agent-merge`, treat it as an advanced entry point to that 
 </details>
 
 <details>
-<summary>Advanced: Parallel sessions and /orchestrate</summary>
+<summary>Advanced (optional): Parallel sessions and /orchestrate</summary>
+
+Skip this section unless you want a preview of multi-session work. The required Chapter 03 path is complete without it.
 
 Once you're comfortable with a single session, you can run several at once, each isolated in its own worktree (see [Chapter 02](../02-sessions-worktrees-context/README.md#running-multiple-sessions-in-parallel)). Parallel sessions save time, but they collide if two of them edit the same files.
 
@@ -466,7 +470,7 @@ If two sessions edited the same files, pause one, compare the diffs, and pick on
 3. A passing agent response is not validated software; tests and builds are the required evidence.
 4. Tests are the guardrail that makes refactors safe.
 5. My work is your issue and pull request inbox; start sessions straight from GitHub context.
-6. Asking Copilot to fix review comments and failing checks keeps that work small and visible.
+6. Asking GitHub Copilot to fix review comments and failing checks keeps that work small and visible.
 7. Agent Merge is a finishing aid, not a replacement for human judgment.
 
 ---

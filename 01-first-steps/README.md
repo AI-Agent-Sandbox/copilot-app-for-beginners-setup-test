@@ -12,8 +12,8 @@ By the end of this chapter, you'll be able to:
 - Navigate Home, My work, Automations, Search, Sessions, and Quick chats
 - Locate major settings areas such as General, Accounts, Sessions, Themes, Accessibility, and Voice dictation
 - Explain Interactive, Plan, and Autopilot
-- Select a model and reasoning effort based on task complexity
-- Understand how to use voice dictation
+- Select a model and reasoning effort based on task complexity (*reasoning effort* controls how hard the model thinks: lower is faster and cheaper, higher can help on harder tasks)
+- Optionally try voice dictation
 
 > ⏱️ **Estimated Time**: ~40 minutes (20 min reading + 20 min hands-on)
 
@@ -208,7 +208,7 @@ You'll compare the session modes by starting from the course project in the side
 4. Choose the mode listed below, paste the matching prompt, and run it.
 5. After you review the response, change the dropdown to the next mode and repeat.
 
-> 💡 **Tip**: The model and reasoning effort controls sit beside the mode selector. Choose a faster model with lower reasoning for quick questions, and a stronger model with higher reasoning for complex changes. Use enough capability for the task, but not more than you need.
+> 💡 **Tip**: The model and **reasoning effort** controls sit beside the mode selector. Reasoning effort is how much thinking budget the model uses. Choose a faster model with lower reasoning for quick questions, and a stronger model with higher reasoning for complex changes. Use enough capability for the task, but not more than you need.
 
 #### Plan Mode Prompt
 
@@ -253,11 +253,11 @@ Select **Search** from the sidebar. Notice that you can search for sessions, PRs
 Close **Search** and reopen it. Scroll through the list to see what else it offers. Notice that several actions can be performed such as:
 
 - New session
-- Start from a canvas
+- Start from a canvas (you'll use canvases in [Chapter 05](../05-canvases/README.md); skip this for now)
 - Add a project
 - New issue
 
-Experiment with some of the actions to learn how to use them.
+Experiment with **New session** or **Add a project** if you want practice. You do not need every action yet.
 
 #### Success Check
 
@@ -265,7 +265,9 @@ You're able to explain what the **Search** feature does and how it can be used.
 
 ---
 
-### 5. Voice Dictation
+### 5. Voice Dictation (optional)
+
+This step is optional. Skip it if you prefer typing prompts.
 
 Go back to the GitHub Copilot App's **Settings** dialog. Select **Voice dictation** and explore the available options:
 

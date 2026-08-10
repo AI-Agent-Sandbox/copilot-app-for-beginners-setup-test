@@ -53,7 +53,7 @@ This allows you to work on multiple tasks or branches simultaneously without sta
 
 ### Running Multiple Sessions in Parallel
 
-Because each session works in its own worktree, you can run several at once without them colliding: one session fixing a bug while another explores a different branch, each with its own folder, branch, and diff. This is the real payoff of worktrees. You'll practice coordinating parallel work safely, including the `/orchestrate` command, in the [Chapter 03 advanced section](../03-development-workflows/README.md).
+Because each session works in its own worktree, you can run several at once without them colliding: one session fixing a bug while another explores a different branch, each with its own folder, branch, and diff. This is the real payoff of worktrees. An optional advanced section in [Chapter 03](../03-development-workflows/README.md) covers parallel sessions and `/orchestrate` if you want that later.
 
 ### Where a Session Runs
 
@@ -100,19 +100,19 @@ Copilot App provides a dedicated context syntax (`@` and `#`) that you can use t
 
 Slash commands are shortcuts you type in the composer. They can open app utilities, invoke agent behaviors, inspect usage, or trigger installed skills. The safest way to discover what your app supports is to type `/` in the composer and read the palette. Commands can vary by app version, enabled plugins, installed skills, and organization policy.
 
-Here are some common slash commands you might use:
+For this chapter, you only need `/chronicle` and `/context`. The other commands are a map for later chapters.
 
 | Command | What it's for | Use it when... |
 |---|---|---|
 | `/chronicle` | Summarizes session history and past work | You want a session recap or standup-style summary |
-| `/context` | Opens session context and token usage details when available | You want to see how much context the session is using |
+| `/context` | Opens session context and token usage details when available | You want to see how much conversation and file text the session is holding |
 | `/usage` | Opens usage, rate limit, or credit information when available | You want to understand cost or plan limits |
 | `/research` | Conducts research on a topic or question | You want to gather detailed information or insights on a specific subject |
 | `/review` | Requests a review of the current session or a specific piece of code | You want to get feedback on your work before finalizing it |
 | `/rubber-duck` | Asks a critic agent to review a plan, diff, tests, or design | You want a second opinion before accepting work |
 
 <details>
-<summary>GitHub Copilot App Slash Commands Reference</summary>
+<summary>Key GitHub Copilot App Slash Commands</summary>
 
 | Command | Description |
 |---|---|
@@ -120,7 +120,7 @@ Here are some common slash commands you might use:
 | `/agent-merge` | Start or enable the Agent Merge workflow for PR merge-readiness automation. |
 | `/chronicle` | Summarize session history, generate standups, search past work, or get workflow/cost tips. |
 | `/collect-debug-logs` | Collect app logs for troubleshooting or filing GitHub Copilot App issues. |
-| `/context` | Show session context details such as token usage, context window, and AI credit spend. |
+| `/context` | Show session context details such as token usage (how much text the model is holding), context window size, and AI credit spend. |
 | `/create-canvas` | Create a canvas from the current session for a richer editable/inspectable surface. |
 | `/orchestrate` | Coordinate multi-session or multi-repo work by delegating to child sessions. |
 | `/remote` | Work with remote-session/remote-control flows when available in your build. |
@@ -185,7 +185,7 @@ Perform these steps:
    https://github.com/YOUR-USER/copilot-app-for-beginners/issues/3
    ```
 
-   > Note: You can also find the issue in [`samples/app-course-issues.md`](../samples/app-course-issues.md#issue-3-improve-the-empty-state-copy) if you'd like to manually add it to your repository.
+   > Note: Replace `YOUR-USER` with your GitHub username. Issue numbers on your fork usually match the course setup, but if they differ, open the issue whose title is about empty-state copy. You can also find the issue text in [`samples/app-course-issues.md`](../samples/app-course-issues.md#issue-3-improve-the-empty-state-copy).
 
 2. Make sure the `practice-empty-state-copy` branch is ready. The setup script from [Chapter 00](../00-quick-start/README.md#2-fork-clone-and-prepare-the-course-repository) created it for you. If you skipped that script, go back and run it now.
 3. In the sidebar, locate the `copilot-app-for-beginners` project and select the **`Create from`** icon next to it.
@@ -253,7 +253,7 @@ Copilot will focus on the sample app source folder instead of referencing unrela
 
 #### How It Works
 
-The `@` and `#` references narrow context. It helps Copilot App focus on the files, issues, or PRs that matter and saves on overall token usage.
+The `@` and `#` references narrow context. They help the GitHub Copilot App focus on the files, issues, or pull requests that matter and keep the session's context smaller.
 
 ---
 
@@ -360,7 +360,7 @@ Copilot App opens the session dialog to display session context details and usag
 
 #### How It Works
 
-Context is the content Copilot App is using for the current session. Checking it helps you know when a session's context is getting overloaded before you add more files, issues, or instructions.
+Context is the content the GitHub Copilot App is using for the current session: recent messages, attached files, issues, and related text. Checking it helps you know when a session is getting overloaded before you add more files, issues, or instructions.
 
 ---
 

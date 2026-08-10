@@ -8,10 +8,19 @@ That place is a **canvas**.
 
 A good canvas is not a prettier answer. It is a **shared control panel for the session**: you and GitHub Copilot both look at the same plan, evidence, and next action.
 
+Two related ideas show up in this chapter:
+
+| Term | Meaning in this course |
+|---|---|
+| Built-in work surfaces | Plan output, terminal, browser, and diff/Review panel tools already in a session |
+| Custom canvas | An optional extension you can create later with `/create-canvas` |
+
+Built-in work surfaces are *canvas-style*: they make session work visible. A custom canvas extends that idea with its own UI and shared state. You do not need a custom canvas to learn the beginner path.
+
 In this chapter you'll:
 
-1. Recognize built-in session canvases you already use: plan, browser, and terminal
-2. Track a session plan + validation board for `samples/book-app-web`
+1. Recognize built-in work surfaces you already use: plan, browser, and terminal
+2. Track a session plan + validation board for `samples/book-app-web` (markdown is fine)
 3. Optionally create a custom canvas later with `/create-canvas`
 
 Creating canvas extensions is advanced. The beginner path stays focused on session control.
@@ -21,7 +30,7 @@ Creating canvas extensions is advanced. The beginner path stays focused on sessi
 By the end of this chapter, you'll be able to:
 
 - Explain why canvases exist and when chat is the wrong shape for the job
-- Identify built-in session surfaces such as plan, browser, and terminal as canvas-style work panels
+- Identify built-in work surfaces such as plan, browser, and terminal as canvas-style panels
 - Use a session plan + validation board for `samples/book-app-web`
 - Keep plan state and validation evidence visible while a session runs
 - Explain the difference between chat history and shared canvas state
@@ -65,29 +74,35 @@ A canvas is the app's arrangement board for human-agent work.
 
 ### A canvas is a shared control panel
 
-GitHub documents canvases as bidirectional work surfaces. The agent can update the canvas while it works, and you can edit the same surface. When you change the board, the agent can continue from that state.
+GitHub documents custom canvases as **bidirectional** work surfaces: both sides can change the same board.
 
-A canvas can include:
+Simple example:
+
+1. GitHub Copilot adds plan steps to the board.
+2. You uncheck a step or write "pause before edits" in the notes.
+3. GitHub Copilot continues from *your* update, not from a buried chat sentence.
+
+A custom canvas can include:
 
 - visible state
 - UI controls
-- agent-callable capabilities
+- agent-callable capabilities (actions the agent can run on that board, such as updating a checklist item)
 - artifacts such as plans, checklists, dashboards, browser previews, terminals, or documents
 
 ![Human and agent shared canvas surface](assets/human-agent-shared-surface.webp)
 
-### Built-in session canvases come first
+### Built-in work surfaces come first
 
-You already used canvas-style surfaces in earlier chapters:
+You already used canvas-style surfaces in earlier chapters. These are **not** custom canvas extensions. They are the built-in session panels that make work inspectable:
 
-| Surface | What you inspect |
+| Built-in work surface | What you inspect |
 |---|---|
 | Plan | Steps, options, and pause points before implementation |
 | Terminal | Install, test, and build evidence |
 | Browser | Running app behavior |
 | Diff / Review panel | What changed and what still needs review |
 
-Those surfaces matter because they are tied to the live session. Custom web content is optional. Session control is the point.
+Those surfaces matter because they are tied to the live session. Custom canvases are optional. Session control is the point.
 
 ### When to use a canvas
 
@@ -131,11 +146,11 @@ That board is useful only when it stays linked to evidence from the same session
 
 In these exercises, you'll:
 
-- Find built-in session canvases in the app
+- Find built-in work surfaces in the app
 - Build a session plan + validation board for the sample app
 - Update the board only when evidence exists
 
-### 1. Find the built-in session canvases
+### 1. Find the built-in work surfaces
 
 Open or create a session for the course repository.
 
@@ -145,15 +160,15 @@ Open or create a session for the course repository.
 4. Locate the **Browser** surface or browser tab if your build exposes it.
 5. Notice where plan output appears in the session when you ask for a plan.
 
-<!-- app-screenshot: Right-side canvas or Review panel showing a plan, browser session, or terminal session open inside the GitHub Copilot App. -->
+<!-- app-screenshot: Review panel showing Terminal, Changes/diff, and Browser tabs beside a session. -->
 
 #### Expected result
 
-You can point to at least two built-in surfaces that make session work inspectable without scrolling the full chat.
+You can point to at least two built-in work surfaces that make session work inspectable without scrolling the full chat.
 
 #### How it works
 
-Chat still carries the conversation. The plan, terminal, browser, and diff surfaces carry the work. That split is the canvas idea before you create any custom extension.
+Chat still carries the conversation. The plan, terminal, browser, and diff surfaces carry the work. That split is the canvas *idea*. A custom canvas extension is optional and comes later.
 
 ---
 
@@ -183,8 +198,9 @@ Session notes
 - next human decision
 - blockers
 
-If a visible canvas is available, put the board there.
+If a custom canvas is available, put the board there.
 If not, return the board as markdown and keep it updated each turn.
+Markdown is a complete success for this exercise.
 Do not edit files yet.
 ```
 
@@ -230,8 +246,9 @@ Prompt GitHub Copilot:
 ```text
 Update the session plan + validation board for samples/book-app-web.
 Mark only the steps that have evidence from terminal or browser output in this session.
-If a visible canvas is available, update that surface.
+If a custom canvas is available, update that surface.
 If not, return the full board as markdown.
+Markdown is enough.
 Do not invent passing results.
 ```
 
@@ -357,9 +374,9 @@ If a canvas fails to open after edits, check extension dependencies, reload requ
 
 ## 🔑 Key Takeaways
 
-1. Chat is for conversation. Canvases are for visible, shared work.
+1. Chat is for conversation. Canvases and canvas-style surfaces are for visible, shared work.
 2. A good canvas is a shared control panel for the session, not a prettier answer.
-3. Built-in plan, browser, and terminal surfaces are the first canvases to master.
+3. Master built-in work surfaces first: plan, browser, terminal, and diff.
 4. A session plan + validation board keeps pause points and evidence scannable.
 5. Update board state only when evidence exists.
 6. Custom canvas extensions and `/create-canvas` are optional advanced steps.

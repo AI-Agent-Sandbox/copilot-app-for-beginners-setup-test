@@ -10,7 +10,7 @@
 
 > Learn to direct and orchestrate AI coding agents from a single desktop app.
 
-Think of the GitHub Copilot App as a desktop cockpit for agentic coding work. It brings together sessions, plans, diffs, tests, browser previews, AI chats, issues, pull requests, and more so you can supervise the work without bouncing between multiple tools.
+Think of the GitHub Copilot App as a desktop cockpit for agentic coding work. Here, *agentic* means AI agents can plan and take actions for you, while you still supervise what they do. The app brings together sessions, plans, diffs, tests, browser previews, AI chats, issues, pull requests, and more so you can guide that work without bouncing between multiple tools.
 
 This course treats the app as a place to guide and review work, not a magic code button. You'll practice choosing context, picking a session mode, checking evidence, and deciding when automation is appropriate to use.
 
