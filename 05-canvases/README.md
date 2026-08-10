@@ -138,6 +138,8 @@ Session notes
 - what blocked last turn
 ```
 
+![Session plan and validation board](assets/session-plan-validation-board.webp)
+
 That board is useful only when it stays linked to evidence from the same session.
 
 ---
@@ -160,7 +162,7 @@ Open or create a session for the course repository.
 4. Locate the **Browser** surface or browser tab if your build exposes it.
 5. Notice where plan output appears in the session when you ask for a plan.
 
-<!-- app-screenshot: Review panel showing Terminal, Changes/diff, and Browser tabs beside a session. -->
+![Review panel open beside a session, showing the plan surface with the Changes and Plan tabs](assets/app-review-panel.webp)
 
 #### Expected result
 
@@ -338,7 +340,7 @@ The agent should be able to:
 Keep the first version simple. No GitHub write actions.
 ```
 
-<!-- app-screenshot: ADVANCED: `/create-canvas` prompt or resulting canvas extension workflow for a session plan + validation board. -->
+![The /create-canvas skill selected in the session composer typeahead](assets/app-create-canvas-command.webp)
 
 Pause before accepting generated extension code. Inspect:
 

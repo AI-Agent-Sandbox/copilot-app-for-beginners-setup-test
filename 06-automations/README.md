@@ -84,6 +84,8 @@ Manual automations run on demand. They're the safest first step because you can:
 - avoid surprise runs
 - confirm tools are minimal
 
+![Start manual, then expand automations](assets/manual-first-path.webp)
+
 ### A Good Beginner Automation
 
 Pick work you already do more than once:
@@ -131,7 +133,7 @@ Create it with this path:
 
 If a control label differs slightly by app version, stay on Manual + read-only tools and the same prompt.
 
-<!-- app-screenshot: New automation form showing trigger choices such as Manual, On a schedule, and When an issue is created. -->
+![New automation form with the trigger dropdown open showing Manual, scheduled, and issue-based choices](assets/app-automation-new-triggers.webp)
 
 Use this prompt:
 
@@ -163,7 +165,7 @@ The automation saves the prompt and trigger so you can run the same bounded task
 
 Run the automation manually. Then open the run details.
 
-<!-- app-screenshot: Automations tab showing saved automations with name, schedule, repository, and last run status. -->
+![Automations tab showing a saved automation with trigger type and last run status](assets/app-automations-list.webp)
 
 Look for:
 
@@ -174,7 +176,7 @@ Look for:
 - result summary
 - error text if the run failed
 
-<!-- app-screenshot: Automation run detail or error state with copyable error text visible, using a safe sample workflow. -->
+![Automation run detail showing the prompt, tool activity, and result summary](assets/app-automation-run-detail.webp)
 
 #### Pause Point
 
@@ -270,7 +272,7 @@ Use cloud automations only after the manual version works and after you understa
 
 ![Local versus cloud automations](assets/local-vs-cloud-automations.webp)
 
-<!-- app-screenshot: ADVANCED: Cloud automation tool selection area showing least-privilege tool choices, with any repository details anonymized. -->
+![Cloud automation form with the Tools selector for least-privilege tool choices](assets/app-automation-cloud-tools.webp)
 
 </details>
 

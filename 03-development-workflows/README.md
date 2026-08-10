@@ -278,7 +278,7 @@ Open **My work**, your in-app inbox for GitHub issues, pull requests, review req
    repo:your-org-or-user/copilot-app-for-beginners is:pr is:open
    ```
 
-<!-- Screenshot needed: assets/app-my-work-filtered.webp. Capture My work with the repository qualifier visible and safe issue/PR rows shown. -->
+![My work filtered with a repository qualifier showing course issues](assets/app-my-work-filtered.webp)
 
 #### Expected Output
 
@@ -307,7 +307,7 @@ Starting from an issue attaches its context automatically, so Copilot plans agai
    Use this issue as the source of truth. Plan a small fix in samples/book-app-web, list the files you expect to change, and name the tests or browser checks that should prove the issue is fixed. Do not edit until I approve the plan.
    ```
 
-<!-- Screenshot needed: assets/app-issue-new-session.webp. Capture Issue 1's detail view with the New session control visible. -->
+![Issue 1 detail view with the New session control](assets/app-issue-new-session.webp)
 
 3. Approve the plan, switch to **Interactive**, apply and validate the fix (tests + browser) as you did in Part A.
 4. Before opening a pull request, review the **Changes** tab and confirm the session only changed files needed for the search fix.
@@ -348,7 +348,7 @@ A **guided fix** is simply asking GitHub Copilot to address a specific review co
 Review this PR conversation comment and propose the smallest change that addresses it. Show me the diff and validation plan before I accept the fix.
 ```
 
-<!-- Screenshot needed: assets/app-pr-review-comment.webp. Capture PR scenario 1 with the empty-state review comment visible. -->
+![Pull request conversation with the empty-state copy review comment](assets/app-pr-review-comment.webp)
 
 **Fix a failing check.** Open [PR scenario 2](../samples/app-course-pr-scenarios.md#pr-scenario-2-failing-ci-points-to-the-stats-test), which fails the `Book app web` workflow, then submit:
 
@@ -356,7 +356,7 @@ Review this PR conversation comment and propose the smallest change that address
 Analyze the failing check. Explain the failure, identify the likely file in samples/book-app-web, propose a minimal fix, and tell me which command should pass afterward.
 ```
 
-<!-- Screenshot needed: assets/app-pr-failing-check.webp. Capture PR scenario 2 with the failing Book app web check and failure details visible. -->
+![Pull request with the failing Book app web check and failure details](assets/app-pr-failing-check.webp)
 
 When the failure is related to the sample app, confirm it locally before marking the PR ready:
 

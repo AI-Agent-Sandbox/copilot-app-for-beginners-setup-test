@@ -69,7 +69,7 @@ Skills package task-specific instructions in a folder with a `SKILL.md` file. Gi
 
 ![Extending the GitHub Copilot App](assets/extending-copilot-app.webp)
 
-<!-- app-screenshot: Skills settings showing installed or available skills. -->
+![Skills settings showing installed and available skills](assets/app-settings-skills.webp)
 
 You can manage skills in app **Settings → Skills**. Skills already configured for your repositories or Copilot CLI are also available in the GitHub Copilot App.
 
@@ -101,6 +101,8 @@ Repo-local skills are ideal for this course because:
 | Easy to forget later | Lives in the repository |
 | Hard for a team to share | Reviewable in pull requests |
 | Easy to drift between sessions | Same guidance each time |
+
+![One-off prompt versus skill](assets/skill-vs-one-off-prompt.webp)
 
 ---
 
@@ -228,7 +230,7 @@ Beginner rule:
 
 ![Give the agent only what it needs](assets/least-tool-principle.webp)
 
-<!-- app-screenshot: INTERMEDIATE: MCP servers settings showing built-in, plugin, or on-device server grouping. -->
+![MCP servers settings showing configured servers grouped by source](assets/app-settings-mcp-servers.webp)
 
 If an MCP server does not work, check authentication, environment variables, enabled status, and whether the session needs to restart.
 
@@ -250,7 +252,7 @@ Beginner model strategy:
 | Debugging failing tests | Use a stronger model if the failure is subtle |
 | Large multi-file change | Keep context tight before increasing model capability |
 
-<!-- app-screenshot: INTERMEDIATE: Plugins settings showing install/manage/enable/disable controls. -->
+![Plugins settings with install, manage, and enable/disable controls](assets/app-settings-plugins.webp)
 
 Least-tool principle:
 

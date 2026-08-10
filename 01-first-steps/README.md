@@ -53,6 +53,8 @@ The GitHub Copilot App is designed to make that supervision loop easier. It is n
 | Explore versus change | Quick chats for safe questions; project sessions when you are ready to work in the repo |
 | Repeat work | Automations save a prompt and run it on demand, on a schedule, or from selected GitHub events |
 
+![Editor versus GitHub Copilot App](assets/editor-vs-app.webp)
+
 You still keep your editor. The app makes it easy to open the project in VS Code when you want to read code, debug, or edit by hand:
 
 - Stay in VS Code, JetBrains, or your usual editor for deep editing and the IDE workflow you already know
@@ -83,6 +85,8 @@ The Copilot App works the same way:
 |---|---|---|
 | Quick chat | Ask questions, brainstorm, summarize, orient yourself | No |
 | Project session | Plan, inspect, edit, test, or create PR-ready work | Usually yes, depending on session settings |
+
+![Quick chat versus project session](assets/quick-chat-vs-project-session.webp)
 
 ### Session Modes
 
