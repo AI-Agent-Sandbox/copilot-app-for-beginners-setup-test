@@ -46,7 +46,7 @@ export default function App() {
   return (
     <main className="app-shell">
       <section className="hero">
-        <p className="eyebrow">GitHub Copilot App sample</p>
+        <p className="eyebrow">GitHub Copilot app sample</p>
         <h1>Book Collection</h1>
         <p>
           Explore a small reading list used throughout the course to practice issues, pull

@@ -69,7 +69,7 @@ If you cannot create issues or pull requests, read the workflows and follow alon
    powershell -ExecutionPolicy Bypass -File .\.github\scripts\setup-training-scenarios.ps1
    ```
 
-6. Open the GitHub Copilot App and connect your fork or local clone.
+6. Open the GitHub Copilot app and connect your fork or local clone.
 
 The setup scripts are designed to be safe to rerun. They reuse existing labels, issues, branches, pull requests, and the seeded PR comment when they already exist.
 
@@ -143,7 +143,7 @@ For a PR conversation comment exercise:
 3. Open a pull request.
 4. Add the seeded PR conversation comment from the scenario file.
 
-The learner can then open the PR in the GitHub Copilot App and ask Copilot to propose the smallest safe response.
+The learner can then open the PR in the GitHub Copilot app and ask Copilot to propose the smallest safe response.
 
 ## Manual fallback: Create a failing check example
 
@@ -174,4 +174,4 @@ Before starting Chapter 03, confirm:
 - At least one practice branch exists.
 - At least one pull request exists for review or failing-check practice.
 - GitHub Actions can run in the repository if you want CI examples.
-- You can see the repository, issues, and PRs in the GitHub Copilot App.
+- You can see the repository, issues, and PRs in the GitHub Copilot app.

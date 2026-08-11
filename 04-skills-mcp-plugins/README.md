@@ -6,7 +6,7 @@ Chapter 03 put you through a full supervised loop: change, evidence, issue, pull
 
 **Today's required path is skills.** Model Context Protocol (MCP) servers, plugins, and custom agents are only a map for later.
 
-In the GitHub Copilot App, the safest extension point is a **repo-local skill**. A skill is a folder of guidance GitHub Copilot can load when a task matches. It keeps the beginner path local, reviewable in git, and free of new credentials.
+In the GitHub Copilot app, the safest extension point is a **repo-local skill**. A skill is a folder of guidance GitHub Copilot can load when a task matches. It keeps the beginner path local, reviewable in git, and free of new credentials.
 
 MCP servers, plugins, model providers, and custom agents are useful too. They also add setup, permissions, or policy decisions. Those stay optional in collapsible sections so you can learn the map without leaving the beginner path.
 
@@ -16,7 +16,7 @@ By the end of this chapter, you'll be able to:
 
 - Explain when skills help more than a one-off prompt
 - Inspect the repo-local `book-app-reviewer` skill included with the course
-- Use a skill-guided review prompt in a GitHub Copilot App session
+- Use a skill-guided review prompt in a GitHub Copilot app session
 - Discover skills with `/skills` or the slash palette when your app supports it
 - Explain the difference between reusable expertise and external tool access
 - Choose least-context and least-tool setups
@@ -31,7 +31,7 @@ By the end of this chapter, you'll be able to:
 Before starting:
 
 - Complete Chapter 03
-- Open the course repository in the GitHub Copilot App
+- Open the course repository in the GitHub Copilot app
 - Use `samples/book-app-web` for all hands-on prompts
 - Keep the beginner path repo-local
 
@@ -67,11 +67,11 @@ Skills package task-specific instructions in a folder with a `SKILL.md` file. Gi
 | Plugins | Bundled capabilities that may include tools, skills, or agents | No |
 | Custom agents | Specialized roles selected with `/agent` | No |
 
-![Extending the GitHub Copilot App](assets/extending-copilot-app.webp)
+![Extending the GitHub Copilot app](assets/extending-copilot-app.webp)
 
 ![Skills settings showing installed and available skills](assets/app-settings-skills.webp)
 
-You can manage skills in app **Settings → Skills**. Skills already configured for your repositories or Copilot CLI are also available in the GitHub Copilot App.
+You can manage skills in app **Settings → Skills**. Skills already configured for your repositories or Copilot CLI are also available in the GitHub Copilot app.
 
 > 💡 **Tip**: A skill changes how GitHub Copilot approaches work. It does not automatically give GitHub Copilot access to new external systems.
 
@@ -216,7 +216,7 @@ Before you allow any file edits, confirm:
 <details>
 <summary>Intermediate: MCP servers are optional external tool access</summary>
 
-MCP servers connect GitHub Copilot to tools or live data, such as documentation sources or internal services. Any MCP servers configured for your repositories or Copilot CLI are available in the GitHub Copilot App. You can also manage them under **Settings → MCP Servers**.
+MCP servers connect GitHub Copilot to tools or live data, such as documentation sources or internal services. Any MCP servers configured for your repositories or Copilot CLI are available in the GitHub Copilot app. You can also manage them under **Settings → MCP Servers**.
 
 They can help a lot, but authentication and organization policy can vary.
 
@@ -278,7 +278,7 @@ Use `/agent` only after you're able to explain why a role is better than a skill
 | The normal agent can do the work | The workflow needs a different role |
 | You want repo-local, lightweight guidance | You need reusable behavior across many tasks |
 
-The GitHub Copilot App also ships built-in skills. Treat them as optional tools you discover when a task needs them, not as required setup for this chapter. Official references:
+The GitHub Copilot app also ships built-in skills. Treat them as optional tools you discover when a task needs them, not as required setup for this chapter. Official references:
 
 - [About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
 - [Built-in skills for the GitHub Copilot app](https://docs.github.com/en/copilot/reference/github-copilot-app-reference/built-in-skills)
@@ -308,7 +308,7 @@ The GitHub Copilot App also ships built-in skills. Treat them as optional tools 
 
 1. Start extension work with repo-local skills.
 2. A skill provides reusable expertise, not automatic external access.
-3. Skills already configured for repositories or Copilot CLI are available in the GitHub Copilot App.
+3. Skills already configured for repositories or Copilot CLI are available in the GitHub Copilot app.
 4. MCP servers and plugins are optional because they may require credentials or policy decisions.
 5. Custom agents are advanced role-based workflows.
 6. Give the agent only the tools and context it needs.
@@ -344,4 +344,4 @@ In the next chapter, you'll use canvases as shared control panels for a session.
 - [About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
 - [Built-in skills for the GitHub Copilot app](https://docs.github.com/en/copilot/reference/github-copilot-app-reference/built-in-skills)
 - [About GitHub Copilot plugins](https://docs.github.com/en/copilot/concepts/agents/about-plugins)
-- [GitHub Copilot App product blog](https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/)
+- [GitHub Copilot app product blog](https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/)

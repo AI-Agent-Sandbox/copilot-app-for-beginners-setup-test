@@ -2,7 +2,7 @@
 
 ## Goal
 
-Capture visible GitHub Copilot App states for course material:
+Capture visible GitHub Copilot app states for course material:
 
 - Save a **PNG** as the high-quality source artifact.
 - Save a **WebP** optimized version for web delivery.

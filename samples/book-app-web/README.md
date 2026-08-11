@@ -1,6 +1,6 @@
 # Book App Web
 
-This is the canonical sample app for the GitHub Copilot App for Beginners course.
+This is the canonical sample app for the GitHub Copilot app for Beginners course.
 
 It is intentionally small so learners can focus on app workflows instead of backend setup. The app uses Vite, React, TypeScript, and Vitest.
 

@@ -1,4 +1,4 @@
-# GitHub Copilot App Automation Map
+# GitHub Copilot app Automation Map
 
 ## Surfaces Available to Agents
 
@@ -62,4 +62,3 @@ Use Accessibility when the visible app UI must be exercised:
 - Do not assume the app is Electron.
 - Do not assume windows stay exposed; always rediscover process/window/web area.
 - Do not automate broad UI scraping of private content into repo files.
-

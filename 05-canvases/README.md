@@ -23,7 +23,7 @@ In this chapter you'll:
 2. Track a session plan + validation board for `samples/book-app-web` (markdown is fine)
 3. Optionally create a custom canvas later with `/create-canvas`
 
-Creating canvas extensions is advanced. The beginner path stays focused on session control.
+Creating canvas extensions is more involved so the beginner path stays focused on session control.
 
 ## 🎯 Learning Objectives
 
@@ -45,7 +45,7 @@ By the end of this chapter, you'll be able to:
 Before starting:
 
 - Complete Chapter 04
-- Open the course repository in the GitHub Copilot App
+- Open the course repository in the GitHub Copilot app
 - Use `samples/book-app-web` as the sample app path
 - Know how to open the Review panel terminal and browser surfaces from Chapter 03
 
@@ -413,5 +413,5 @@ In the next chapter, you'll turn repeatable prompts into automations. You'll sta
 
 - [Working with canvas extensions](https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions)
 - [Customizing the GitHub Copilot app](https://docs.github.com/en/copilot/how-tos/github-copilot-app/customize-github-copilot-app)
-- [GitHub Copilot App generally available](https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available/)
-- [GitHub Copilot App product blog](https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/)
+- [GitHub Copilot app generally available](https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available/)
+- [GitHub Copilot app product blog](https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/)

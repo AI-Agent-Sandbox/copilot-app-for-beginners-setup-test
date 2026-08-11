@@ -3,7 +3,7 @@ set -euo pipefail
 
 usage() {
   cat <<'USAGE'
-Set up GitHub Copilot App course training scenarios.
+Set up GitHub Copilot app course training scenarios.
 
 This script seeds a fork or disposable training repository with:
 - course issue labels
@@ -457,7 +457,7 @@ ensure_pr_comment "$empty_pr" "Please mention that they can change the search te
 log ""
 log "Setup complete."
 log "Next checks:"
-log "- Open the GitHub Copilot App and connect this fork/training repository."
+log "- Open the GitHub Copilot app and connect this fork/training repository."
 log "- Confirm the seeded issues and PRs appear in My work."
 log "- Wait for the failing-check PR workflow to finish before using that lesson."
 

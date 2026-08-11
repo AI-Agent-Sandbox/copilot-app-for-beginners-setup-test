@@ -4,7 +4,7 @@
 
 Welcome! This chapter gets the basics out of the way:
 
-- Install the GitHub Copilot App and sign in
+- Install the GitHub Copilot app and sign in
 - Fork and clone the course repository
 - Run the training setup script so later chapters have issues, pull requests (PRs), and practice branches ready
 - Connect the repository in the app
@@ -17,7 +17,7 @@ Once the app can see the repository, Chapter 01 explains why you'd use the app a
 By the end of this chapter, you'll be able to:
 
 - Confirm the required account, Git, operating system, and Copilot access prerequisites
-- Install, open, and sign in to the GitHub Copilot App
+- Install, open, and sign in to the GitHub Copilot app
 - Fork, clone, and prepare the course repository for later GitHub workflow chapters
 - Connect the repository to the app
 - Use Chats for a read-only repository overview
@@ -56,11 +56,11 @@ You should see a version number for each command. Install anything that is missi
 
 Before you record anything, you get the recording studio ready. You sign in for access, plug in your gear, load the song you'll work on, and run a quick soundcheck to make sure everything sounds right before you commit a single take.
 
-![Setting up the studio analogy for GitHub Copilot App setup](assets/studio-setup-soundcheck.webp)
+![Setting up the studio analogy for GitHub Copilot app setup](assets/studio-setup-soundcheck.webp)
 
 The Copilot App setup is the same idea. In the following examples you'll do the following:
 
-1. Install the GitHub Copilot App
+1. Install the GitHub Copilot app
 2. Sign in to the app
 3. Fork and clone the course repository
 4. Run a setup script
@@ -68,13 +68,13 @@ The Copilot App setup is the same idea. In the following examples you'll do the 
 6. Ask a first question about the repository
 7. Start a small session
 
-![First 10 minutes in the GitHub Copilot App](assets/first-10-minutes-flow.webp)
+![First 10 minutes in the GitHub Copilot app](assets/first-10-minutes-flow.webp)
 
 ## Core Concepts
 
 | Concept | Description |
 |---|---|
-| GitHub Copilot App | A desktop app for supervising agent-driven development work |
+| GitHub Copilot app | A desktop app for supervising agent-driven development work |
 | Chat | A conversation for exploration that does not create a branch or worktree |
 | Project | A connected repository or folder the app can work with |
 | Session | A focused agent workspace for a task |
@@ -86,14 +86,14 @@ The Copilot App setup is the same idea. In the following examples you'll do the 
 
 In these exercises, you'll:
 
-- Install the GitHub Copilot App and sign in
+- Install the GitHub Copilot app and sign in
 - Fork, clone, and prepare the course repository with the setup script
 - Connect the repository to the app
 - Ask a read-only question in Chats, then create your first project session
 
 ### 1. Install and Sign In
 
-1. [Download and install the GitHub Copilot App][getting-started] for your operating system.
+1. [Download and install the GitHub Copilot app][getting-started] for your operating system.
 2. Open the app.
 3. Select *Sign in to GitHub*.
 4. Sign in with your [GitHub account][github-signup], or enter your GitHub Enterprise Server URL if your organization uses one.
@@ -103,7 +103,7 @@ In these exercises, you'll:
 
 You'll see the main app window with navigation areas such as Home, My work, Automations, Search, Sessions, and Chats.
 
-![GitHub Copilot App First Look](../assets/github-copilot-app.webp)
+![GitHub Copilot app First Look](../assets/github-copilot-app.webp)
 
 #### How It Works
 
@@ -275,7 +275,7 @@ Check:
 
 ## 🔑 Key Takeaways
 
-1. The GitHub Copilot App is a desktop control center for agent-driven coding work
+1. The GitHub Copilot app is a desktop control center for agent-driven coding work
 2. Chats are safe for exploration because they don't create a branch or worktree
 3. Project sessions are where focused repository work begins
 4. This course uses `samples/book-app-web` as the main sample app path
@@ -285,7 +285,7 @@ Check:
 
 ## ➡️ What's Next
 
-In the next chapter, you'll answer a practical question first: why use the GitHub Copilot App if you already use GitHub Copilot in an editor or terminal? Then you'll tour the interface, compare chats with sessions, and learn when to use Interactive, Plan, and Autopilot modes.
+In the next chapter, you'll answer a practical question first: why use the GitHub Copilot app if you already use GitHub Copilot in an editor or terminal? Then you'll tour the interface, compare chats with sessions, and learn when to use Interactive, Plan, and Autopilot modes.
 
 **[← Back to course README](../README.md)** | **[Continue to Chapter 01 →](../01-first-steps/README.md)**
 
@@ -293,8 +293,8 @@ In the next chapter, you'll answer a practical question first: why use the GitHu
 
 ## Source References
 
-- [Getting started with the GitHub Copilot App][getting-started]
-- [About the GitHub Copilot App][about-app]
+- [Getting started with the GitHub Copilot app][getting-started]
+- [About the GitHub Copilot app][about-app]
 - [Working with agent sessions][agent-sessions]
 
 [course-repository]: https://github.com/DanWahlin/copilot-app-for-beginners

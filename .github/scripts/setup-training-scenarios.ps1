@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 
 function Show-Usage {
     @"
-Set up GitHub Copilot App course training scenarios.
+Set up GitHub Copilot app course training scenarios.
 
 This script seeds a fork or disposable training repository with:
 - course issue labels
@@ -588,7 +588,7 @@ Ensure-PRComment $emptyPr "Please mention that they can change the search term, 
 Write-Log ""
 Write-Log "Setup complete."
 Write-Log "Next checks:"
-Write-Log "- Open the GitHub Copilot App and connect this fork/training repository."
+Write-Log "- Open the GitHub Copilot app and connect this fork/training repository."
 Write-Log "- Confirm the seeded issues and PRs appear in My work."
 Write-Log "- Wait for the failing-check PR workflow to finish before using that lesson."
 

@@ -40,7 +40,7 @@ This file tracks issues found during course reviews of the root README and Chapt
 
 **Problem:** A learner-facing source reference linked to `.plans/course-plan.md`, which exposed internal planning notes and made the published course look unfinished.
 
-**Resolution:** Removed the internal planning citation and left the public GitHub Copilot App, sessions, canvas, changelog, and product-blog references.
+**Resolution:** Removed the internal planning citation and left the public GitHub Copilot app, sessions, canvas, changelog, and product-blog references.
 
 ## ✅ Issue 5: Root README promised chapter imagery that chapters did not yet provide
 
@@ -312,7 +312,7 @@ The issues below come from a deep review of the root README and Chapters 00-08 f
 
 **Problem:** Exercise 5 teaches the app's **Voice dictation** feature, but the Source References `[voice-input]` link points to `https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/voice-input` (line 358), which is the Copilot **CLI** documentation path. The link resolves (HTTP 200) but documents a different surface than the one the chapter teaches, which can confuse a learner who follows it expecting app guidance.
 
-**Resolution:** Verified via web research that no GitHub Copilot App-specific voice/dictation doc exists yet; the desktop app is built on the Copilot CLI, and the CLI voice-input page is the only official reference. Kept the valid link but relabeled the citation to "Voice input documentation (Copilot CLI, which the app is built on)" so learners know what they are opening.
+**Resolution:** Verified via web research that no GitHub Copilot app-specific voice/dictation doc exists yet; the desktop app is built on the Copilot CLI, and the CLI voice-input page is the only official reference. Kept the valid link but relabeled the citation to "Voice input documentation (Copilot CLI, which the app is built on)" so learners know what they are opening.
 
 ## ✅ Issue 29: Chapter 02 "Start from an Issue" reuses the branch screenshot
 
@@ -345,7 +345,7 @@ The issues below come from a deep review of the root README and Chapters 00-08 f
 
 **Problem:** The deep review of Chapters 03-08 (the line-by-line pass that Chapters 00-02 got via Issues 16-30 but 03-08 had not) found the product name written inconsistently. The root `README.md` (15 uses, 0 lowercase) and Chapters 00-04 always write "GitHub Copilot **App**" with a capital A, but Chapters 05-08 used lowercase "Copilot app" 18 times across prose, an analogy table, and Source Reference link labels (for example `05` line 41, `06` line 39, `07` line 38, `08` lines 53/55/427). A learner reading straight through sees the app's name change casing mid-course.
 
-**Resolution:** Normalized all 18 prose/label occurrences to "GitHub Copilot App" to match the root README and Chapters 00-04. Verified the change touched only visible text: every documentation URL still uses the lowercase `github-copilot-app` path (a 20-insertion/20-deletion casing-only diff), and all external links in these chapters return HTTP 200.
+**Resolution:** Normalized all 18 prose/label occurrences to "GitHub Copilot app" to match the root README and Chapters 00-04. Verified the change touched only visible text: every documentation URL still uses the lowercase `github-copilot-app` path (a 20-insertion/20-deletion casing-only diff), and all external links in these chapters return HTTP 200.
 
 ## ✅ Issue 32: Chapter 07 referred to a hands-on step as "Hands-on example 3" instead of "Exercise 3"
 
@@ -365,7 +365,7 @@ The issues below come from a deep review of the root README and Chapters 00-08 f
 
 **Problem:** Three `<!-- MANUAL STEP TO VERIFY: ... -->` comments remain in the shipping content. They flag app affordances the author must confirm in the live app before publishing: the exact control that approves/applies Copilot's edits in Interactive mode (a "Keep" or "Approve" action), and how to open the integrated browser/preview. These require in-app verification and cannot be confirmed from the CLI.
 
-**Suggested resolution:** Verify each affordance in the current GitHub Copilot App build, update the surrounding step wording if the labels differ, capture the paired screenshot, and remove the `MANUAL STEP TO VERIFY` comment. These pair with the pending app screenshots tracked in Issue 24.
+**Suggested resolution:** Verify each affordance in the current GitHub Copilot app build, update the surrounding step wording if the labels differ, capture the paired screenshot, and remove the `MANUAL STEP TO VERIFY` comment. These pair with the pending app screenshots tracked in Issue 24.
 
 ## Positive highlights
 

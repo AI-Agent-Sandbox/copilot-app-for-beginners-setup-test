@@ -1,11 +1,11 @@
 ---
 name: github-copilot-app-automation
-description: Automate and research the GitHub Copilot App desktop experience. Use for driving Copilot App sessions, creating isolated app experiments, mapping app UI/accessibility controls, taking app screenshots, saving PNG captures, optimizing WebP images, testing prompts without submitting, using app/session APIs, canvases, automations, macOS Accessibility, AppleScript, and safe end-to-end Copilot App workflow probes.
+description: Automate and research the GitHub Copilot app desktop experience. Use for driving Copilot App sessions, creating isolated app experiments, mapping app UI/accessibility controls, taking app screenshots, saving PNG captures, optimizing WebP images, testing prompts without submitting, using app/session APIs, canvases, automations, macOS Accessibility, AppleScript, and safe end-to-end Copilot App workflow probes.
 ---
 
-# GitHub Copilot App Automation
+# GitHub Copilot app Automation
 
-Use this skill when the task is about **driving, testing, mapping, or experimenting with the GitHub Copilot App**. Prefer app/session APIs first, then app-native canvases/automations, and use GUI Accessibility only when the visible desktop UI itself must be exercised.
+Use this skill when the task is about **driving, testing, mapping, or experimenting with the GitHub Copilot app**. Prefer app/session APIs first, then app-native canvases/automations, and use GUI Accessibility only when the visible desktop UI itself must be exercised.
 
 ## Where to Run This
 
@@ -13,7 +13,7 @@ This skill's power depends heavily on where the agent runs:
 
 | Context | Session/app APIs | Capture reliability | Best for |
 |---|---|---|---|
-| **Inside the GitHub Copilot App agent** (recommended) | Available: `list_projects`, `create_session`, `navigate_to`, `open_issue_session`, `open_pr_session`, plus canvas + workflow APIs | High — `navigate_to` brings the target state to the foreground on the active Space, then `screencapture` grabs it | End-to-end screenshot capture; driving sessions/issues/PRs/canvases/automations to exact states |
+| **Inside the GitHub Copilot app agent** (recommended) | Available: `list_projects`, `create_session`, `navigate_to`, `open_issue_session`, `open_pr_session`, plus canvas + workflow APIs | High — `navigate_to` brings the target state to the foreground on the active Space, then `screencapture` grabs it | End-to-end screenshot capture; driving sessions/issues/PRs/canvases/automations to exact states |
 | **GitHub Copilot CLI** (terminal) | Not available | Low/manual — a human must navigate the app, and its window must be on the same macOS Space as the terminal | Read-only mapping (`map-app.sh`), the dynamic `screenshots.sh` list/embed flow, and one-off captures of an already-visible window |
 
 For the missing course screenshots, **drive this from inside the app**. The agent can programmatically set up and navigate to each state (the hardest part), and `navigate_to` makes the window visible and capturable, which removes the macOS Spaces/visibility problem the CLI hits. The shell scripts here (`screenshots.sh`, `capture-window.sh`, `map-app.sh`) run in both contexts because the app agent is built on Copilot CLI.
@@ -175,7 +175,7 @@ For test boards, dashboards, course trackers, or visible state, use canvas surfa
 
 ## Source References
 
-- GitHub Copilot App overview: <https://docs.github.com/en/copilot/concepts/agents/github-copilot-app>
+- GitHub Copilot app overview: <https://docs.github.com/en/copilot/concepts/agents/github-copilot-app>
 - Agent sessions: <https://docs.github.com/en/copilot/how-tos/github-copilot-app/agent-sessions>
 - Canvas extensions: <https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions>
 - Automations: <https://docs.github.com/en/copilot/how-tos/github-copilot-app/using-automations>

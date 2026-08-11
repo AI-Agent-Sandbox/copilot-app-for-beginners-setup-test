@@ -78,7 +78,7 @@ end tell
 AS
 )"
 
-doc="# GitHub Copilot App UI Map
+doc="# GitHub Copilot app UI Map
 
 - app_version: ${ver}
 - generated: $(date -u +%Y-%m-%dT%H:%M:%SZ)

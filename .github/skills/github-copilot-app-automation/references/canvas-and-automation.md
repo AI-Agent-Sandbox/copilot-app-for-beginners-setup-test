@@ -16,7 +16,7 @@ Good Copilot App automation canvas ideas:
 Canvas prompt pattern:
 
 ```text
-/create-canvas Create a GitHub Copilot App automation research board with cards for sources, app controls, experiments, risks, and course ideas. Add actions to add a card, move a card, mark a source verified, record an experiment result, and export the board to markdown.
+/create-canvas Create a GitHub Copilot app automation research board with cards for sources, app controls, experiments, risks, and course ideas. Add actions to add a card, move a card, mark a source verified, record an experiment result, and export the board to markdown.
 ```
 
 ## Automations
@@ -36,4 +36,3 @@ Safety:
 - Avoid prompts that include secrets.
 - Prefer manual/on-demand first.
 - Cloud automations can have policy, visibility, and billing implications.
-

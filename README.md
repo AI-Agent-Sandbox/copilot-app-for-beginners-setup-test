@@ -1,26 +1,26 @@
-![GitHub Copilot App for Beginners](assets/course-hero-command-center.webp)
+![GitHub Copilot app for Beginners](assets/course-hero-command-center.webp)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)&ensp;
-[![GitHub Copilot App documentation](https://img.shields.io/badge/GitHub-Copilot_App_Docs-00a3ee?style=flat-square&logo=github)](https://docs.github.com/en/copilot/concepts/agents/github-copilot-app)&ensp;
+[![GitHub Copilot app documentation](https://img.shields.io/badge/GitHub-Copilot_App_Docs-00a3ee?style=flat-square&logo=github)](https://docs.github.com/en/copilot/concepts/agents/github-copilot-app)&ensp;
 [![Course level](https://img.shields.io/badge/Level-Beginner-success?style=flat-square)](#target-audience)
 
 🎯 [What You'll Learn](#what-youll-learn) &ensp; 👥 [Target Audience](#target-audience) &ensp; 🤖 [Copilot Family](#understanding-the-github-copilot-family) &ensp; 📚 [Course Structure](#course-structure) &ensp; 🙋 [Getting Help](#getting-help)
 
-# GitHub Copilot App for Beginners
+# GitHub Copilot app for Beginners
 
 > Learn to direct and orchestrate AI coding agents from a single desktop app.
 
-Think of the GitHub Copilot App as a desktop cockpit for agentic coding work. Here, *agentic* means AI agents can plan and take actions for you, while you still supervise what they do. The app brings together sessions, plans, diffs, tests, browser previews, AI chats, issues, pull requests, and more so you can guide that work without bouncing between multiple tools.
+Think of the GitHub Copilot app as a desktop cockpit for agentic coding work. Here, *agentic* means AI agents can plan and take actions for you, while you still supervise what they do. The app brings together sessions, plans, diffs, tests, browser previews, AI chats, issues, pull requests, and more so you can guide that work without bouncing between multiple tools.
 
 This course treats the app as a place to guide and review work, not a magic code button. You'll practice choosing context, picking a session mode, checking evidence, and deciding when automation is appropriate to use.
 
-![GitHub Copilot App](assets/github-copilot-app.webp)
+![GitHub Copilot app](assets/github-copilot-app.webp)
 
 ## 🎯 What You'll Learn
 
 By the end of the course, you'll be able to:
 
-- Install and sign in to the GitHub Copilot App
+- Install and sign in to the GitHub Copilot app
 - Connect a repository and use chats for safe exploration
 - Start sessions from prompts, issues, and pull requests
 - Explain Interactive, Plan, and Autopilot modes
@@ -51,14 +51,14 @@ No agentic development experience is required. Basic GitHub, Git, and JavaScript
 
 | Product | Where it runs | Best for |
 |---|---|---|
-| GitHub Copilot App (this course) | Desktop app | Supervising sessions, plans, diffs, browser validation, PRs, canvases, and automations |
+| GitHub Copilot app (this course) | Desktop app | Supervising sessions, plans, diffs, browser validation, PRs, canvases, and automations |
 | GitHub Copilot in IDEs | VS Code, Visual Studio, JetBrains, and other editors | Agents, inline suggestions, chat, and editor-centered coding |
 | GitHub Copilot CLI | Terminal | Terminal-native agent work and command-line workflows |
 | Copilot cloud agent | GitHub-hosted environment | Background work on issues and cloud sessions when enabled |
 
-![Where the GitHub Copilot App fits across Copilot surfaces](assets/copilot-family-comparison.webp)
+![Where the GitHub Copilot app fits across Copilot surfaces](assets/copilot-family-comparison.webp)
 
-This course focuses on the GitHub Copilot App. Along the way, you'll see how it connects to GitHub, local tools, browser previews, terminal output, and cloud capabilities when available.
+This course focuses on the GitHub Copilot app. Along the way, you'll see how it connects to GitHub, local tools, browser previews, terminal output, and cloud capabilities when available.
 
 ## 📚 Course Structure
 
@@ -91,18 +91,18 @@ When a chapter shows a model response, remember that demo output varies. Your ap
 
 ## Command, Reference, and Help
 
-- [GitHub Copilot App overview][about-app]
+- [GitHub Copilot app overview][about-app]
 - [Getting started with the app][getting-started]
 - [Working with sessions][agent-sessions]
 - [Issues and pull requests][issues-prs]
 - [Using automations][automations]
 - [Working with canvas extensions][canvas-docs]
-- [Customizing the GitHub Copilot App][customizing]
+- [Customizing the GitHub Copilot app][customizing]
 
 ## Getting Help
 
 - Re-read the troubleshooting section in the chapter you're working on
-- Check the official GitHub Copilot App documentation
+- Check the official GitHub Copilot app documentation
 - Confirm that your GitHub account, repository permissions, and organization policies allow the feature you're trying to use
 
 ## Contributing
@@ -124,8 +124,8 @@ This project is licensed under the terms of the MIT open source license. See [LI
 ## Additional References
 
 - [Public app repository][app-readme]
-- [GitHub Copilot App GA changelog][ga-changelog]
-- [GitHub Copilot App product blog][app-blog]
+- [GitHub Copilot app GA changelog][ga-changelog]
+- [GitHub Copilot app product blog][app-blog]
 
 [about-app]: https://docs.github.com/copilot/concepts/agents/github-copilot-app
 [getting-started]: https://docs.github.com/copilot/how-tos/github-copilot-app/getting-started

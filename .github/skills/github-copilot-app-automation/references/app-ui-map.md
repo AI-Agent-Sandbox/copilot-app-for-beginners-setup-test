@@ -1,4 +1,4 @@
-# GitHub Copilot App UI Map
+# GitHub Copilot app UI Map
 
 - app_version: 1.0.4
 - captured: 2026-06-22 (macOS, Home screen)

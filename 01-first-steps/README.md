@@ -8,7 +8,7 @@ Now that the app is installed and connected to the course repository, this chapt
 
 By the end of this chapter, you'll be able to:
 
-- Explain when the GitHub Copilot App helps beyond using Copilot in an editor or Copilot CLI in the terminal
+- Explain when the GitHub Copilot app helps beyond using Copilot in an editor or Copilot CLI in the terminal
 - Navigate Home, My work, Automations, Search, Sessions, and Chats
 - Locate major settings areas such as General, Accounts, Sessions, Themes, Accessibility, and Voice dictation
 - Explain Interactive, Plan, and Autopilot
@@ -21,11 +21,11 @@ By the end of this chapter, you'll be able to:
 
 ## ✅ Prerequisites
 
-Complete [Chapter 00](../00-quick-start/README.md) first. If you jumped straight here, pause and use Chapter 00 to fork and clone the course repository, run the training setup script, and connect the repository in the GitHub Copilot App.
+Complete [Chapter 00](../00-quick-start/README.md) first. If you jumped straight here, pause and use Chapter 00 to fork and clone the course repository, run the training setup script, and connect the repository in the GitHub Copilot app.
 
 ---
 
-## Why use the GitHub Copilot App?
+## Why use the GitHub Copilot app?
 
 If you already use GitHub Copilot in VS Code or use Copilot CLI in the terminal, why bother with a separate app?
 
@@ -43,7 +43,7 @@ GitHub Copilot in the editor or terminal is excellent next to the code you alrea
 
 ### The solution
 
-The GitHub Copilot App is designed to make that supervision loop easier. It is not a replacement for your editor, and it is not "multi-project support" by itself. Editors already handle multi-folder work. The app gives you a desktop place to run and review agent sessions, keep task evidence together, and move work through GitHub without hunting across tools.
+The GitHub Copilot app is designed to make that supervision loop easier. It is not a replacement for your editor, and it is not "multi-project support" by itself. Editors already handle multi-folder work. The app gives you a desktop place to run and review agent sessions, keep task evidence together, and move work through GitHub without hunting across tools.
 
 | Challenge | What the app adds |
 |---|---|
@@ -53,12 +53,12 @@ The GitHub Copilot App is designed to make that supervision loop easier. It is n
 | Explore versus change | Chats for safe questions; project sessions when you are ready to work in the repo |
 | Repeat work | Automations save a prompt and run it on demand, on a schedule, or from selected GitHub events |
 
-![Editor versus GitHub Copilot App](assets/editor-vs-app.webp)
+![Editor versus GitHub Copilot app](assets/editor-vs-app.webp)
 
 You still keep your editor. The app makes it easy to open the project in VS Code when you want to read code, debug, or edit by hand:
 
 - Stay in VS Code, JetBrains, or your usual editor for deep editing and the IDE workflow you already know
-- Open the GitHub Copilot App when you want to run agent sessions, pick a mode, review what changed, and move work through issues and pull requests
+- Open the GitHub Copilot app when you want to run agent sessions, pick a mode, review what changed, and move work through issues and pull requests
 - Jump back to VS Code from the app any time you want the full editor on the same project
 - Use Automations later for repeatable agent work you do not want to retype each time
 
@@ -68,7 +68,7 @@ You still keep your editor. The app makes it easy to open the project in VS Code
 
 A producer in the control room doesn't handle every song the same way. Some takes need close direction. Some need the arrangement charted out first. Some quick questions just need a fast answer.
 
-![Producer's control room analogy for GitHub Copilot App session modes](assets/producer-control-room-modes.webp)
+![Producer's control room analogy for GitHub Copilot app session modes](assets/producer-control-room-modes.webp)
 
 The Copilot App works the same way:
 
@@ -119,7 +119,7 @@ In these exercises, you'll:
 
 ### 1. Tour the App
 
-Open GitHub Copilot App and notice these areas in the sidebar:
+Open GitHub Copilot app and notice these areas in the sidebar:
 
 1. Home
 2. My work
@@ -173,7 +173,7 @@ You'll also see Skills, Model Context Protocol (MCP) servers, Plugins, and Model
 Open Chats and try this prompt:
 
 ```text
-I'm learning the GitHub Copilot App with the copilot-app-for-beginners repository. What are three safe things I can ask before changing code?
+I'm learning the GitHub Copilot app with the copilot-app-for-beginners repository. What are three safe things I can ask before changing code?
 ```
 
 Now try the following prompt and notice the response:
@@ -273,7 +273,7 @@ You're able to explain what the **Search** feature does and how it can be used.
 
 This step is optional. Skip it if you prefer typing prompts.
 
-Go back to the GitHub Copilot App's **Settings** dialog. Select **Voice dictation** and explore the available options:
+Go back to the GitHub Copilot app's **Settings** dialog. Select **Voice dictation** and explore the available options:
 
 - Input device
 - Microphone privacy
@@ -284,9 +284,9 @@ Go back to the GitHub Copilot App's **Settings** dialog. Select **Voice dictatio
 
 Perform the following actions:
 
-> Note: Microphone permission is granted at the operating-system level, so the exact screen differs by platform (for example, System Settings on macOS, or Settings → Privacy & security → Microphone on Windows). Follow your OS prompts to allow the GitHub Copilot App to use the microphone.
+> Note: Microphone permission is granted at the operating-system level, so the exact screen differs by platform (for example, System Settings on macOS, or Settings → Privacy & security → Microphone on Windows). Follow your OS prompts to allow the GitHub Copilot app to use the microphone.
 
-1. Select **Microphone privacy**, **Open preferences** and ensure the GitHub Copilot App has the necessary permissions to use the microphone.
+1. Select **Microphone privacy**, **Open preferences** and ensure the GitHub Copilot app has the necessary permissions to use the microphone.
 2. Select **Test microphone** to verify that it's working correctly.
 3. Note the keyboard shortcut for activating voice dictation.
 4. Exit the **Settings** dialog and return to the main app window.
@@ -372,9 +372,9 @@ In the next chapter, you'll solve the "shared working copy" challenge from this 
 
 ## Source References
 
-- [Getting started with the GitHub Copilot App][getting-started]
+- [Getting started with the GitHub Copilot app][getting-started]
 - [Working with agent sessions][agent-sessions]
-- [GitHub Copilot App changelog][app-changelog]
+- [GitHub Copilot app changelog][app-changelog]
 - [Voice input documentation (Copilot CLI, which the app is built on)][voice-input]
 - [AI models reference][ai-models]
 

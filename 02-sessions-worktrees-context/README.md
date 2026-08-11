@@ -2,7 +2,7 @@
 
 > **What if every task had its own workspace, branch, context, and history?**
 
-In Chapter 01 you saw the "shared working copy" problem: two agent tasks can blur together in one folder and branch. Sessions are where the GitHub Copilot App stops feeling like ordinary chat. A session can have its own branch, working folder, plan, diff, terminal output, browser preview, and GitHub context. In this chapter, you'll start a session from a task, learn how worktrees keep work separated, and practice giving GitHub Copilot proper context.
+In Chapter 01 you saw the "shared working copy" problem: two agent tasks can blur together in one folder and branch. Sessions are where the GitHub Copilot app stops feeling like ordinary chat. A session can have its own branch, working folder, plan, diff, terminal output, browser preview, and GitHub context. In this chapter, you'll start a session from a task, learn how worktrees keep work separated, and practice giving GitHub Copilot proper context.
 
 ## 🎯 Learning Objectives
 
@@ -59,7 +59,7 @@ Because each session works in its own worktree, you can run several at once with
 
 When you start a session, the composer's **Workspace** selector lets you choose *where* the work happens. 
 
-![Workspace selector in the GitHub Copilot App](assets/app-workspace-selector.webp)
+![Workspace selector in the GitHub Copilot app](assets/app-workspace-selector.webp)
 
 The choices trade off speed against isolation:
 
@@ -112,14 +112,14 @@ For this chapter, you only need `/chronicle` and `/context`. The other commands 
 | `/rubber-duck` | Asks a critic agent to review a plan, diff, tests, or design | You want a second opinion before accepting work |
 
 <details>
-<summary>Key GitHub Copilot App Slash Commands</summary>
+<summary>Key GitHub Copilot app Slash Commands</summary>
 
 | Command | Description |
 |---|---|
 | `/agent` | Select or switch the active agent for a session. |
 | `/agent-merge` | Start or enable the Agent Merge workflow for PR merge-readiness automation. |
 | `/chronicle` | Summarize session history, generate standups, search past work, or get workflow/cost tips. |
-| `/collect-debug-logs` | Collect app logs for troubleshooting or filing GitHub Copilot App issues. |
+| `/collect-debug-logs` | Collect app logs for troubleshooting or filing GitHub Copilot app issues. |
 | `/context` | Show session context details such as token usage (how much text the model is holding), context window size, and AI credit spend. |
 | `/create-canvas` | Create a canvas from the current session for a richer editable/inspectable surface. |
 | `/orchestrate` | Coordinate multi-session or multi-repo work by delegating to child sessions. |
@@ -147,7 +147,7 @@ Each exercise names the branch it needs. For reference, here is the full set tha
 - `practice-card-polish`: a starting point for improving book card spacing and responsive layout
 - `practice-failing-stats-check`: a stats test fails on purpose so you can practice fixing a failing CI check
 
-When an exercise calls for you to use one of these branches, you'll use it to create your GitHub Copilot App session. You can do this by selecting the project's `Create from` icon in the sidebar (1) and then selecting the desired branch from the dialog (2).
+When an exercise calls for you to use one of these branches, you'll use it to create your GitHub Copilot app session. You can do this by selecting the project's `Create from` icon in the sidebar (1) and then selecting the desired branch from the dialog (2).
 
 ![Create from branch](assets/app-create-from-icon-step1.svg)
 
@@ -253,7 +253,7 @@ Copilot will focus on the sample app source folder instead of referencing unrela
 
 #### How It Works
 
-The `@` and `#` references narrow context. They help the GitHub Copilot App focus on the files, issues, or pull requests that matter and keep the session's context smaller.
+The `@` and `#` references narrow context. They help the GitHub Copilot app focus on the files, issues, or pull requests that matter and keep the session's context smaller.
 
 ---
 
@@ -360,7 +360,7 @@ Copilot App opens the session dialog to display session context details and usag
 
 #### How It Works
 
-Context is the content the GitHub Copilot App is using for the current session: recent messages, attached files, issues, and related text. Checking it helps you know when a session is getting overloaded before you add more files, issues, or instructions.
+Context is the content the GitHub Copilot app is using for the current session: recent messages, attached files, issues, and related text. Checking it helps you know when a session is getting overloaded before you add more files, issues, or instructions.
 
 ---
 
@@ -404,11 +404,11 @@ In the next chapter, you'll use isolated sessions for real development work. Par
 
 ## Source References
 
-- [About the GitHub Copilot App][about-app]
+- [About the GitHub Copilot app][about-app]
 - [Working with agent sessions][agent-sessions]
-- [GitHub Copilot App repository][app-readme]
-- [GitHub Copilot App changelog][changelog]
-- [GitHub Copilot App product blog][app-blog]
+- [GitHub Copilot app repository][app-readme]
+- [GitHub Copilot app changelog][changelog]
+- [GitHub Copilot app product blog][app-blog]
 
 [agent-sessions]: https://docs.github.com/en/copilot/how-tos/github-copilot-app/agent-sessions
 [about-app]: https://docs.github.com/en/copilot/concepts/agents/github-copilot-app

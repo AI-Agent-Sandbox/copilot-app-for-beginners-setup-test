@@ -4,7 +4,7 @@
 
 Chapter 05 made session work visible with canvases. This chapter makes repeatable work reusable.
 
-Automations let you save agent tasks in the GitHub Copilot App and run them on demand or later on a schedule. You'll start with a manual open-work summary that runs only when you choose. Scheduled, cloud, and issue-triggered automations appear later because they can involve policy, billing, and permission decisions.
+Automations let you save agent tasks in the GitHub Copilot app and run them on demand or later on a schedule. You'll start with a manual open-work summary that runs only when you choose. Scheduled, cloud, and issue-triggered automations appear later because they can involve policy, billing, and permission decisions.
 
 ## 🎯 Learning Objectives
 
@@ -26,7 +26,7 @@ By the end of this chapter, you'll be able to:
 Before starting:
 
 - Complete Chapter 05
-- Open the course repository in the GitHub Copilot App
+- Open the course repository in the GitHub Copilot app
 - Run the Chapter 00 setup script so practice issues and pull requests exist
 - Use `samples/book-app-web` for validation examples
 
@@ -364,7 +364,7 @@ That last habit is the whole point: human judgment stays in the loop at every ma
 
 ## Source References
 
-- [Using automations in the GitHub Copilot App](https://docs.github.com/en/copilot/how-tos/github-copilot-app/using-automations)
-- [About automations in the GitHub Copilot App](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-automations)
-- [GitHub Copilot App generally available](https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available/)
-- [GitHub Copilot App product blog](https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/)
+- [Using automations in the GitHub Copilot app](https://docs.github.com/en/copilot/how-tos/github-copilot-app/using-automations)
+- [About automations in the GitHub Copilot app](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-automations)
+- [GitHub Copilot app generally available](https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available/)
+- [GitHub Copilot app product blog](https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/)

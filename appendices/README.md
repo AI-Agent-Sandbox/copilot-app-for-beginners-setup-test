@@ -1,6 +1,6 @@
 # Appendices
 
-These appendices support the hands-on chapters in **GitHub Copilot App for Beginners**. They're practical references you can use while working through the course or preparing course assets.
+These appendices support the hands-on chapters in **GitHub Copilot app for Beginners**. They're practical references you can use while working through the course or preparing course assets.
 
 | Appendix | Use it for |
 |---|---|

@@ -4,7 +4,7 @@ Quick reference for beginner terms used in this course.
 
 ## Agent Merge
 
-An advanced GitHub Copilot App workflow where the agent helps carry a pull request through review, checks, and merge readiness. Use it only after you understand the diff, tests, required reviews, and branch protection rules.
+An advanced GitHub Copilot app workflow where the agent helps carry a pull request through review, checks, and merge readiness. Use it only after you understand the diff, tests, required reviews, and branch protection rules.
 
 ## Automation
 

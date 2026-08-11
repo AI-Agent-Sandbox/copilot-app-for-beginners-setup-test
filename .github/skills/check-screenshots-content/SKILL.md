@@ -1,6 +1,6 @@
 ---
 name: check-screenshots-content
-description: Verify GitHub Copilot App screenshots match the course content. Use when running /check-screenshots-content, or when asked to confirm that app- prefixed screenshots in chapter assets folders are consistent with the README labels, button names, menu items, dialog options, and step-by-step instructions that reference them.
+description: Verify GitHub Copilot app screenshots match the course content. Use when running /check-screenshots-content, or when asked to confirm that app- prefixed screenshots in chapter assets folders are consistent with the README labels, button names, menu items, dialog options, and step-by-step instructions that reference them.
 ---
 
 # Check Screenshots Content
@@ -12,7 +12,7 @@ chapter READMEs that embed or describe it.
 
 ## Convention This Skill Assumes
 
-- App screenshots (real GitHub Copilot App captures, dark theme) are named
+- App screenshots (real GitHub Copilot app captures, dark theme) are named
   **`app-<topic>.webp`** and live in a chapter's **`assets/`** folder, for
   example `02-sessions-worktrees-context/assets/app-session-details.webp`.
 - Illustrations and analogy art (recording-studio theme, flow diagrams) do **not**

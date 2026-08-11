@@ -2,7 +2,7 @@
 
 > **What if one supervised workflow carried a change from first edit all the way to a merge-ready pull request?**
 
-Chapters 01 and 02 gave you the control room and isolated sessions. This chapter puts them to work. The GitHub Copilot App is strongest when you use it as a loop:
+Chapters 01 and 02 gave you the control room and isolated sessions. This chapter puts them to work. The GitHub Copilot app is strongest when you use it as a loop:
 
 - **Part A** is the inner loop on your machine: review, debug, test, and preview a change in `samples/book-app-web`.
 - **Part B** is the outer loop on GitHub: use **My work** as an inbox, start sessions from issues, open and review pull requests, and ask GitHub Copilot to fix review comments and failing checks.
@@ -58,7 +58,7 @@ But a take isn't an album. A producer's review desk tracks briefs, approvals, no
 | CI check | Continuous integration check: an automated validation run on your pull request, often from GitHub Actions |
 | Agent Merge | An advanced finishing workflow that helps carry a pull request to merge-readiness |
 
-![Development loop in the GitHub Copilot App](assets/development-loop.webp)
+![Development loop in the GitHub Copilot app](assets/development-loop.webp)
 
 > The most important idea in this chapter: **a confident chat response is not validated software.** Treat the diff, tests, terminal output, and browser behavior as the evidence.
 
@@ -505,8 +505,8 @@ In the next chapter, you'll extend the app with reusable expertise and optional 
 
 ## Source References
 
-- [GitHub Copilot App GA changelog][ga-changelog]
-- [GitHub Copilot App product blog][app-blog]
+- [GitHub Copilot app GA changelog][ga-changelog]
+- [GitHub Copilot app product blog][app-blog]
 - [Working with agent sessions][agent-sessions]
 - [Managing issues and pull requests][issues-prs]
 - [About the rubber duck agent][rubber-duck]

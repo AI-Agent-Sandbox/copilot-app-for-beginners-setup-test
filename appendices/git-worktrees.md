@@ -1,6 +1,6 @@
 # Git Worktrees
 
-Git worktrees are one of the most important ideas in the GitHub Copilot App. They let the app run more than one coding session without mixing all changes into the same folder.
+Git worktrees are one of the most important ideas in the GitHub Copilot app. They let the app run more than one coding session without mixing all changes into the same folder.
 
 ## Plain-English definition
 

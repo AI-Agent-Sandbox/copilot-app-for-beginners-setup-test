@@ -92,7 +92,7 @@ Suggested entry:
 ```markdown
 ## 2026-06-21, Chapter 02 worktree screenshots
 
-- App version: GitHub Copilot App 1.x.x
+- App version: GitHub Copilot app 1.x.x
 - OS: macOS 15.x
 - Repository commit: abc1234
 - Account: training account
