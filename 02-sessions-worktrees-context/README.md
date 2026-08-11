@@ -20,7 +20,7 @@ By the end of this chapter, you'll be able to:
 
 ## ✅ Prerequisites
 
-Complete Chapters [00](../00-quick-start/README.md) and [01](../01-first-steps/README.md). At this point, you've connected the course repository and understand the difference between Quick chats and project sessions.
+Complete Chapters [00](../00-quick-start/README.md) and [01](../01-first-steps/README.md). At this point, you've connected the course repository and understand the difference between chats and project sessions.
 
 ---
 

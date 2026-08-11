@@ -176,7 +176,7 @@ Look for:
 - result summary
 - error text if the run failed
 
-![Automation run detail showing the prompt, tool activity, and result summary](assets/app-automation-run-detail.webp)
+![Automation run detail with tool activity and the open-work summary of issues and pull requests](assets/app-automation-run-detail.webp)
 
 #### Pause Point
 

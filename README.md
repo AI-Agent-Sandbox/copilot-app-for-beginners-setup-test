@@ -21,7 +21,7 @@ This course treats the app as a place to guide and review work, not a magic code
 By the end of the course, you'll be able to:
 
 - Install and sign in to the GitHub Copilot App
-- Connect a repository and use Quick chats for safe exploration
+- Connect a repository and use chats for safe exploration
 - Start sessions from prompts, issues, and pull requests
 - Explain Interactive, Plan, and Autopilot modes
 - Use worktree-backed sessions without colliding with your main branch
@@ -64,8 +64,8 @@ This course focuses on the GitHub Copilot App. Along the way, you'll see how it 
 
 | Chapter | Title | What learners do |
 |:--:|---|---|
-| 00 | 🚀 [Quick Start](./00-quick-start/README.md) | Prepare the course environment and verify a Quick chat |
-| 01 | 👋 [First Steps](./01-first-steps/README.md) | Learn why you'd use the app, then tour key features: UI, Quick chats, settings, sessions, modes, and model controls |
+| 00 | 🚀 [Quick Start](./00-quick-start/README.md) | Prepare the course environment and verify a chat |
+| 01 | 👋 [First Steps](./01-first-steps/README.md) | Learn why you'd use the app, then tour key features: UI, Chats, settings, sessions, modes, and model controls |
 | 02 | 🌳 [Sessions, Worktrees, and Context](./02-sessions-worktrees-context/README.md) | Start isolated sessions and use `@`, `#`, and `/` for context |
 | 03 | ⚡ [Development and GitHub Workflows](./03-development-workflows/README.md) | Review, debug, test, and preview a change, then move it through My work, issues, PRs, review comments, checks, guided fixes, and advanced Agent Merge |
 | 04 | 🧰 [Skills, Model Context Protocol (MCP) Servers, and Plugins](./04-skills-mcp-plugins/README.md) | Start with repo-local skills, then learn optional MCP servers, plugins, and agents |

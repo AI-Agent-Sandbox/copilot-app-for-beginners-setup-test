@@ -22,7 +22,7 @@ These appendices support the hands-on chapters in **GitHub Copilot App for Begin
 
 The required beginner path is Chapters 00 through 03. The appendices support that path without adding more required exercises.
 
-- Chapter 00: Setup, sign in, repository connection, and Quick chat.
+- Chapter 00: Setup, sign in, repository connection, and Chats.
 - Chapter 01: App orientation, modes, model choices, settings, shortcuts, and voice.
 - Chapter 02: Sessions, worktrees, context controls, and local or cloud execution.
 - Chapter 03: Review, debug, test, browser validation, Pick and Polish, plus GitHub issues, pull requests, review comments, and checks.

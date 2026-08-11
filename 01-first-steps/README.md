@@ -2,14 +2,14 @@
 
 > **What if agent work stopped bouncing you between chat, diffs, terminals, browser tabs, and pull requests?**
 
-Now that the app is installed and connected to the course repository, this chapter answers why the desktop app helps if you already use GitHub Copilot in an editor or terminal. Then you'll tour the main navigation, compare Quick chats with project sessions, and see how session modes change how much control you keep.
+Now that the app is installed and connected to the course repository, this chapter answers why the desktop app helps if you already use GitHub Copilot in an editor or terminal. Then you'll tour the main navigation, compare chats with project sessions, and see how session modes change how much control you keep.
 
 ## 🎯 Learning Objectives
 
 By the end of this chapter, you'll be able to:
 
 - Explain when the GitHub Copilot App helps beyond using Copilot in an editor or Copilot CLI in the terminal
-- Navigate Home, My work, Automations, Search, Sessions, and Quick chats
+- Navigate Home, My work, Automations, Search, Sessions, and Chats
 - Locate major settings areas such as General, Accounts, Sessions, Themes, Accessibility, and Voice dictation
 - Explain Interactive, Plan, and Autopilot
 - Select a model and reasoning effort based on task complexity (*reasoning effort* controls how hard the model thinks: lower is faster and cheaper, higher can help on harder tasks)
@@ -50,7 +50,7 @@ The GitHub Copilot App is designed to make that supervision loop easier. It is n
 | Scattered tools | Agent sessions, diffs, terminal output, browser previews, and GitHub work in one desktop app |
 | Shared working copy | Project sessions keep focused work separate (you'll learn about worktrees later) |
 | Unclear autonomy | Interactive, Plan, and Autopilot make the level of control obvious |
-| Explore versus change | Quick chats for safe questions; project sessions when you are ready to work in the repo |
+| Explore versus change | Chats for safe questions; project sessions when you are ready to work in the repo |
 | Repeat work | Automations save a prompt and run it on demand, on a schedule, or from selected GitHub events |
 
 ![Editor versus GitHub Copilot App](assets/editor-vs-app.webp)
@@ -72,21 +72,21 @@ A producer in the control room doesn't handle every song the same way. Some take
 
 The Copilot App works the same way:
 
-- Quick chat is like asking a session musician a quick question.
+- A chat is like asking a session musician a quick question.
 - Interactive mode is like directing a take with frequent check-ins.
 - Plan mode is like charting the arrangement and approving it before the first take.
 - Autopilot is like giving a clearly defined task to a trusted system and letting it complete it with minimal intervention.
 
 ## Core Concepts
 
-### Quick Chat Versus Project Session
+### Chat Versus Project Session
 
 | Use this | When you're trying to... | Creates branch or worktree? |
 |---|---|---|
-| Quick chat | Ask questions, brainstorm, summarize, orient yourself | No |
+| Chat | Ask questions, brainstorm, summarize, orient yourself | No |
 | Project session | Plan, inspect, edit, test, or create PR-ready work | Usually yes, depending on session settings |
 
-![Quick chat versus project session](assets/quick-chat-vs-project-session.webp)
+![Chat versus project session](assets/quick-chat-vs-project-session.webp)
 
 ### Session Modes
 
@@ -113,7 +113,7 @@ For now, just notice **Automations** in the sidebar. You'll build one in [Chapte
 In these exercises, you'll:
 
 - Tour the app's main surfaces
-- Brainstorm with Quick chats
+- Brainstorm with chats
 - Compare session modes to learn how you can use them
 - Try search and voice dictation
 
@@ -126,9 +126,9 @@ Open GitHub Copilot App and notice these areas in the sidebar:
 3. Automations
 4. Search
 5. Sessions
-6. Quick chats
+6. Chats
 
-![App sidebar with Home, My work, Automations, Search, Sessions, and Quick chats](assets/app-sidebar.webp)
+![App sidebar with Home, My work, Automations, Search, Sessions, and Chats](assets/app-sidebar.webp)
 
 When you open **Automations**, you should see a place to create and manage saved agent runs. Do not build one yet. The goal is only to know where recurring work lives in the app.
 
@@ -168,9 +168,9 @@ You'll also see Skills, Model Context Protocol (MCP) servers, Plugins, and Model
 
 </details>
 
-### 2. Use Quick Chats for Brainstorming
+### 2. Use Chats for Brainstorming
 
-Open Quick chats and try this prompt:
+Open Chats and try this prompt:
 
 ```text
 I'm learning the GitHub Copilot App with the copilot-app-for-beginners repository. What are three safe things I can ask before changing code?
@@ -179,7 +179,7 @@ I'm learning the GitHub Copilot App with the copilot-app-for-beginners repositor
 Now try the following prompt and notice the response:
 
 ```text
-Can this quick chat modify code if I tell it to do that?
+Can this chat modify code if I tell it to do that?
 ```
 
 #### Expected Output
@@ -190,13 +190,13 @@ For the second prompt, the response may say something like the following:
 
 > Not directly in your configured repositories.
 >
-> This quick chat can **read and inspect** your repos, but it should not modify files in those primary working copies. If you ask for code changes, I'll create or open a dedicated project session with its own isolated worktree and coding agent, then delegate the work there.
+> This chat can **read and inspect** your repos, but it should not modify files in those primary working copies. If you ask for code changes, I'll create or open a dedicated project session with its own isolated worktree and coding agent, then delegate the work there.
 
 > Note: Demo output varies. Treat the response as guidance, not a reproducible script.
 
 #### How It Works
 
-Quick chats help you learn without starting a branch. It's a great way to explore and understand your codebase before making changes.
+Chats help you learn without starting a branch. They are a great way to explore and understand your codebase before making changes.
 
 ---
 
@@ -290,7 +290,7 @@ Perform the following actions:
 2. Select **Test microphone** to verify that it's working correctly.
 3. Note the keyboard shortcut for activating voice dictation.
 4. Exit the **Settings** dialog and return to the main app window.
-5. Create a new **Quick chats** session and test voice dictation by using the keyboard shortcut.
+5. Create a new chat under **Chats** and test voice dictation by using the keyboard shortcut.
 
 #### How It Works
 
@@ -323,8 +323,8 @@ Check your plan, organization policy, project settings, and app version.
 
 1. Keep your editor for deep coding. Open GitHub Copilot app when agent work needs a clearer place to run and review.
 2. From the app, you can open the project in VS Code any time you want the full editor.
-3. The app is organized around work surfaces: Home, My work, Search, Sessions, Quick chats, and Automations.
-4. **Quick chats** are for exploration. **Sessions** are for focused repository work. **Automations** are for repeatable agent runs.
+3. The app is organized around work surfaces: Home, My work, Search, Sessions, Chats, and Automations.
+4. **Chats** are for exploration. **Sessions** are for focused repository work. **Automations** are for repeatable agent runs.
 5. **Interactive**, **Plan**, and **Autopilot** change the level of autonomy.
 6. Model and reasoning choices affect speed, quality, and cost. Use enough capability for the task, but not more than needed.
 
@@ -336,13 +336,13 @@ Check your plan, organization policy, project settings, and app version.
 
 Create a small mode map for the Book App. The goal is to use the app surfaces from this chapter without changing files yet.
 
-1. Open Quick chats and submit this prompt:
+1. Open Chats and submit this prompt:
 
    ```text
    I'm learning the copilot-app-for-beginners course with samples/book-app-web. Give me a beginner-friendly overview of what the app does, which files look important, and one safe question I should ask before editing code.
    ```
 
-   Write down one useful thing Quick chat taught you about the app.
+   Write down one useful thing the chat taught you about the app.
 
 2. Create a Plan-mode session and submit this prompt:
 
