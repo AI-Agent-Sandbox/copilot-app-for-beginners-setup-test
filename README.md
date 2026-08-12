@@ -125,7 +125,6 @@ This project is licensed under the terms of the MIT open source license. See [LI
 
 - [Public app repository][app-readme]
 - [GitHub Copilot app GA changelog][ga-changelog]
-- [GitHub Copilot app product blog][app-blog]
 
 [about-app]: https://docs.github.com/copilot/concepts/agents/github-copilot-app
 [getting-started]: https://docs.github.com/copilot/how-tos/github-copilot-app/getting-started
@@ -136,4 +135,3 @@ This project is licensed under the terms of the MIT open source license. See [LI
 [customizing]: https://docs.github.com/copilot/how-tos/github-copilot-app/customize-github-copilot-app
 [app-readme]: https://github.com/github/app
 [ga-changelog]: https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available/
-[app-blog]: https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/
