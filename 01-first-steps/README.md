@@ -90,11 +90,11 @@ The Copilot App works the same way:
 
 ### Session Modes
 
-| Mode | Beginner meaning | Use case |
-|---|---|---|
-| Interactive | Copilot works with you step by step | You'd like to be involved throughout the entire process |
-| Plan | Copilot creates a plan before executing | The initial approach and project details matter |
-| Autopilot | Copilot works independently | Tasks that are well defined and have clear outcomes |
+| Mode | How the app describes it | Beginner meaning | Use case |
+|---|---|---|---|
+| Interactive | "Step-by-step collaboration" | Copilot works with you step by step | You'd like to be involved throughout the entire process |
+| Plan | "Plan first, execute when ready" | Copilot creates a plan before executing | The initial approach and project details matter |
+| Autopilot | "End-to-end execution without interruption" | Copilot works independently | Tasks that are well defined and have clear outcomes |
 
 ![Session mode decision ladder](assets/session-mode-decision-ladder.webp)
 

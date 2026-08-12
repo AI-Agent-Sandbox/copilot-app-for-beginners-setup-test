@@ -278,7 +278,7 @@ Use `/agent` only after you're able to explain why a role is better than a skill
 | The normal agent can do the work | The workflow needs a different role |
 | You want repo-local, lightweight guidance | You need reusable behavior across many tasks |
 
-The GitHub Copilot app also ships built-in skills. Treat them as optional tools you discover when a task needs them, not as required setup for this chapter. Official references:
+The GitHub Copilot app also ships built-in skills. Treat them as optional tools you discover when a task needs them, not as required setup for this chapter. One worth knowing about: `/security-review` scans a session's changes for vulnerabilities and reports findings with severity, making it a security-focused sibling to the `/rubber-duck` critique you used in Chapter 03. Official references:
 
 - [About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
 - [Built-in skills for the GitHub Copilot app](https://docs.github.com/en/copilot/reference/github-copilot-app-reference/built-in-skills)

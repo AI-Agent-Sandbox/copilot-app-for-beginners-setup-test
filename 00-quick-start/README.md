@@ -31,7 +31,7 @@ By the end of this chapter, you'll be able to:
 
 - A [GitHub account](https://github.com/signup) with [GitHub Copilot](https://github.com/features/copilot/plans) access
 - [Git](https://git-scm.com/install) installed
-- A fork of the [course repository][course-repository] if you plan to complete the GitHub issue and PR chapters
+- A fork of the [course repository][course-repository]. Many chapters in the course use the issues, branches, and pull requests seeded into your fork, so treat the fork as required unless you only plan to read along
 - [Node.js LTS and npm](https://nodejs.org) for later chapters that use `samples/book-app-web`
 - [GitHub CLI (`gh`)](https://cli.github.com) for the setup script used in the course
 - [Python 3](https://www.python.org/downloads) for the macOS, Linux, or Git Bash setup script. The Windows PowerShell script does not need Python.
@@ -280,6 +280,23 @@ Check:
 3. Project sessions are where focused repository work begins
 4. This course uses `samples/book-app-web` as the main sample app path
 5. [Run the setup script](#2-fork-clone-and-prepare-the-course-repository) so later chapters have practice branches, issues, and pull request scenarios ready
+
+---
+
+## 📝 Assignment
+
+![Assignment](../assets/assignment.webp)
+
+Confirm your setup is ready for the rest of the course:
+
+1. In your fork on GitHub, open the **Issues** tab and confirm the setup script created the five course issues. Then open the branch list and look for the `practice-*` branches.
+2. In the app, open a new chat by selecting the `+` icon next to `Chats` in the sidebar and submit the following prompt:
+
+   ```text
+   List the top-level folders in the copilot-app-for-beginners repository and tell me which one contains the sample web app.
+   ```
+
+Success criteria: Your fork shows the seeded issues and branches, and the chat correctly identifies `samples`.
 
 ---
 

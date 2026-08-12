@@ -66,8 +66,8 @@ The choices trade off speed against isolation:
 | Workspace | What it means | Choose it when... |
 |---|---|---|
 | New worktree | The session gets its own folder and branch beside your clone | You want changes, branches, and diffs kept separate from your main checkout (the safe default this course uses) |
-| Local repo | The session works directly in your existing clone, with no separate folder | You want a quick, low-stakes look and don't mind the session touching your working folder |
-| Cloud sandbox | The session runs on GitHub's hosted infrastructure instead of your machine | You want to offload the work or keep your local environment untouched |
+| Local repository | The session works directly in your existing clone, with no separate folder | You want a quick, low-stakes look and don't mind the session touching your working folder |
+| Cloud | The session runs in a cloud sandbox on GitHub's hosted infrastructure instead of your machine | You want to offload the work or keep your local environment untouched |
 
 ![Where should this session run: local repo, new worktree, or cloud sandbox](assets/session-run-location-comparison.webp)
 
@@ -87,12 +87,15 @@ Before you run multiple sessions, find the app's session settings you toured in 
 
 ### Context Syntax
 
-Copilot App provides a dedicated context syntax (`@` and `#`) that you can use to give a session the context it needs to understand the problem and generate helpful responses.
+Copilot App provides a dedicated context syntax (`@`, `#`, and `&`) that you can use to give a session the context it needs to understand the problem and generate helpful responses.
 
 | Syntax | Use it for | Example |
 |---|---|---|
 | `@` | Files or folders | `@samples/book-app-web/src` |
 | `#` | Issues or pull requests | `#12` |
+| `&` | Other sessions | Type `&` and pick a session from the list |
+
+You'll mostly use `@` and `#` in this course. The `&` reference is handy later, when you want one session to see what another session already worked on.
 
 > Tip: Provide the smallest amount of useful context - less is often more.
 
@@ -100,16 +103,12 @@ Copilot App provides a dedicated context syntax (`@` and `#`) that you can use t
 
 Slash commands are shortcuts you type in the composer. They can open app utilities, invoke agent behaviors, inspect usage, or trigger installed skills. The safest way to discover what your app supports is to type `/` in the composer and read the palette. Commands can vary by app version, enabled plugins, installed skills, and organization policy.
 
-For this chapter, you only need `/chronicle` and `/context`. The other commands are a map for later chapters.
+For this chapter, you only need `/chronicle` and `/context`. Additional commands can be found in the collapsible section below.
 
 | Command | What it's for | Use it when... |
 |---|---|---|
 | `/chronicle` | Summarizes session history and past work | You want a session recap or standup-style summary |
 | `/context` | Opens session context and token usage details when available | You want to see how much conversation and file text the session is holding |
-| `/usage` | Opens usage, rate limit, or credit information when available | You want to understand cost or plan limits |
-| `/research` | Conducts research on a topic or question | You want to gather detailed information or insights on a specific subject |
-| `/review` | Requests a review of the current session or a specific piece of code | You want to get feedback on your work before finalizing it |
-| `/rubber-duck` | Asks a critic agent to review a plan, diff, tests, or design | You want a second opinion before accepting work |
 
 <details>
 <summary>Key GitHub Copilot app Slash Commands</summary>
@@ -149,9 +148,9 @@ Each exercise names the branch it needs. For reference, here is the full set tha
 
 When an exercise calls for you to use one of these branches, you'll use it to create your GitHub Copilot app session. You can do this by selecting the project's `Create from` icon in the sidebar (1) and then selecting the desired branch from the dialog (2).
 
-![Create from branch](assets/app-create-from-icon-step1.svg)
+![Step 1: Select the Create from icon next to the project name](assets/app-create-from-icon-step1.svg)
 
-![Create from branch](assets/app-branches-dialog-step2.svg)
+![Step 2: Choose a branch from the Create from dialog](assets/app-branches-dialog-step2.svg)
 
 Try it out!
 1. Locate the **copilot-app-for-beginners** project in the sidebar.
@@ -245,7 +244,7 @@ Perform these steps:
 5. Select one of the issues from the list. You should see something like `#1` (depending on the issue you selected) appear in the composer.
 6. Add a short instruction such as `Propose a plan only. Do not edit files.` then submit.
 
-   > Note: Depending on the issue you selected, you may be prompted to change to a different branch. Press escape to exit if asked. Stay in Plan mode and do not approve edits yet. The goal is to practice `#` context, not to finish the issue. 
+   > Note: Depending on the issue you selected, the app may offer to switch the session to that issue's training branch. For this exercise, decline the switch (press Escape) and stay where you are. The goal is to practice `#` context, not to finish the issue. In Chapter 03 you'll accept that same prompt when an exercise needs the bug that lives on a training branch. Stay in Plan mode and do not approve edits yet.
 
 #### Expected Output
 

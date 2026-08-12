@@ -116,7 +116,7 @@ In this exercise you'll work on a practice branch that already contains a real b
 
 Perform these steps:
 
-1. Make sure the `practice-unread-count-bug` branch is ready (the [Chapter 00](../00-quick-start/README.md#2-fork-clone-and-prepare-the-course-repository) setup script created it). Prefer to set it up manually? See the [Issue 2 training-branch steps](../samples/app-course-issues.md#issue-2-keep-unread-stats-correct-when-filters-are-active).
+1. Make sure the `practice-unread-count-bug` branch is ready (the [Chapter 00](../00-quick-start/README.md#2-fork-clone-and-prepare-the-course-repository) setup script created it). If you skipped the script, [run it now](../00-quick-start/README.md#2-fork-clone-and-prepare-the-course-repository) - it's safe to rerun and only adds what's missing.
 2. In the sidebar, select the **Create from** icon next to the `copilot-app-for-beginners` project, choose the **Branches** tab, and select `practice-unread-count-bug`. This starts a session on that branch in a new worktree.
 3. In the composer, set the **Mode** selector to **Plan**, then submit:
 
@@ -300,8 +300,12 @@ If an expected item is missing, check the active qualifier first, then repositor
 
 Starting from an issue attaches its context automatically, so Copilot plans against the real task instead of a pasted summary.
 
-1. Choose Issue 1 (make search case-insensitive). Read it in My work, or see [`samples/app-course-issues.md`](../samples/app-course-issues.md#issue-1-make-search-case-insensitive). Use the `practice-search-case-bug` branch created by the setup script. If you skipped the script, apply Issue 1's training-branch diff first ([Chapter 02 practice branch note](../02-sessions-worktrees-context/README.md#branches-used-in-this-course)).
-2. From the issue, select **New session**, set the mode to **Plan**, and submit:
+1. Choose Issue 1 (make search case-insensitive). Read it in My work, or see [`samples/app-course-issues.md`](../samples/app-course-issues.md#issue-1-make-search-case-insensitive). This exercise needs the `practice-search-case-bug` branch, which the Chapter 00 setup script created. If you skipped the script, [run it now](../00-quick-start/README.md#2-fork-clone-and-prepare-the-course-repository) - it's safe to rerun and only adds what's missing.
+2. From the issue, select **New session**.
+
+   > **Important**: The search bug only exists on the `practice-search-case-bug` branch. On the `main` branch, search already matches regardless of case, so there would be nothing to fix. The issue names its training branch, and the app may offer to switch the session to it: accept that switch (this is the prompt you declined in Chapter 02, but here you want it). If no prompt appears, set the branch dropdown next to the workspace selector in the composer to `practice-search-case-bug` before you submit.
+
+3. Set the mode to **Plan** and submit:
 
    ```text
    Use this issue as the source of truth. Plan a small fix in samples/book-app-web, list the files you expect to change, and name the tests or browser checks that should prove the issue is fixed. Do not edit until I approve the plan.
@@ -309,9 +313,9 @@ Starting from an issue attaches its context automatically, so Copilot plans agai
 
 ![Issue 1 detail view with the New session control](assets/app-issue-new-session.webp)
 
-3. Approve the plan, switch to **Interactive**, apply and validate the fix (tests + browser) as you did in Part A.
-4. Before opening a pull request, review the **Changes** tab and confirm the session only changed files needed for the search fix.
-5. Use the app's PR flow to open a pull request. Confirm the description explains the change and only reports validation you actually observed.
+4. Approve the plan, switch to **Interactive**, apply and validate the fix (tests + browser) as you did in Part A.
+5. Before opening a pull request, review the **Changes** tab and confirm the session only changed files needed for the search fix.
+6. Use the app's PR flow to open a pull request. Confirm the description explains the change and only reports validation you actually observed.
 
 <!-- Screenshot needed: assets/app-pr-diff-review.webp. Capture the pull request diff or Files changed view for the focused search fix. -->
 

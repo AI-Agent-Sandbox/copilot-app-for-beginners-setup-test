@@ -206,6 +206,8 @@ Markdown is a complete success for this exercise.
 Do not edit files yet.
 ```
 
+> Note: The board you're creating here is shared state in markdown, not a canvas extension. That's the point: you get the canvas *idea* (visible, updatable state you and Copilot both work from) with nothing to install.
+
 #### Expected output
 
 - A board with plan steps, validation checks, and session notes

@@ -18,6 +18,10 @@ A named line of work in git. A branch lets you make changes without changing the
 
 A shared surface inside the Copilot App where humans and agents can inspect or update visible state. Examples include plans, checklists, browser sessions, terminal sessions, dashboards, and documents.
 
+## Chat
+
+A lightweight Copilot App conversation for questions, brainstorming, or repository exploration. A chat does not create a branch or worktree, which makes it safe for exploring before you change code.
+
 ## CI check
 
 An automated check that runs on a pull request or branch. It may run tests, builds, linting, or security scans. CI stands for continuous integration.
@@ -34,6 +38,10 @@ A specialized agent configuration for a role or workflow, such as review, docume
 
 A view of what changed between two versions of files. In this course, the diff is one of the main places where you inspect agent work before accepting it.
 
+## Guided fix
+
+Asking GitHub Copilot to address a specific review comment or failing check while the diff and validation evidence stay visible. It keeps follow-up work small and reviewable.
+
 ## Local sandbox
 
 A local execution environment with restrictions on file system, network, or system access. It keeps work closer to your machine while limiting what the agent can reach.
@@ -45,6 +53,10 @@ A tool server that uses Model Context Protocol to connect Copilot to external to
 ## Model
 
 The AI system used for a response or session. Different models may vary in speed, cost, reasoning ability, and output style.
+
+## My work
+
+The app view that gathers your GitHub issues, pull requests, review requests, and failing checks in one inbox. It supports search qualifiers such as `repo:` and `is:pr` to narrow what you see.
 
 ## Pick and Polish
 
@@ -58,13 +70,17 @@ A packaged extension that can add capabilities to the Copilot App. Plugins may i
 
 Pull request. A GitHub request to review and merge changes from one branch into another.
 
-## Quick chat
+## Prompt injection
 
-A lightweight Copilot App conversation for questions, brainstorming, or repository exploration. It is useful when you do not need a branch, worktree, or code changes.
+A risk where untrusted text, such as an issue title or body, tries to steer the agent into unintended actions. Read-only tasks and least-privilege tool choices reduce the risk.
 
 ## Reasoning effort
 
 A setting that controls how much thinking the model spends on a task. Higher effort can help complex work, but may be slower or more expensive.
+
+## Rubber duck
+
+A built-in critic agent, invoked with `/rubber-duck`, that reviews a plan, diff, tests, or design and points out weaknesses before you accept the work.
 
 ## Session
 

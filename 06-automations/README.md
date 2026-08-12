@@ -135,6 +135,8 @@ If a control label differs slightly by app version, stay on Manual + read-only t
 
 ![New automation form with the trigger dropdown open showing Manual, scheduled, and issue-based choices](assets/app-automation-new-triggers.webp)
 
+> Note: The trigger list offers more than this chapter uses: hourly, daily, weekly, and CRON schedules, plus event triggers for issue comments, pull request comments, and merged pull requests. You'll also see a **Templates** gallery with prebuilt automations. The same rules apply to all of them: start manual and read-only, then expand once the prompt is trustworthy.
+
 Use this prompt:
 
 ```text

@@ -119,7 +119,7 @@ Suggested flow:
 
 ## License
 
-This project is licensed under the terms of the MIT open source license. See [LICENSE](./LICENSE) when available.
+This project is licensed under the terms of the MIT open source license. See [LICENSE](./LICENSE) for details.
 
 ## Additional References
 
