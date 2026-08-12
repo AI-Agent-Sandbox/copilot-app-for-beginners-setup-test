@@ -20,7 +20,7 @@ Good contributions include:
 3. Avoid exact promises about model output.
 4. Label optional professional topics as `INTERMEDIATE:` or `ADVANCED:` when appropriate.
 5. Do not include secrets, private repositories, customer data, or organization-specific details.
-6. If you add screenshots, follow [Screenshot Capture Guide](appendices/screenshot-capture-guide.md) and [Privacy-Safe Course Assets](appendices/privacy-safe-course-assets.md).
+6. If you add screenshots, keep them privacy-safe: use anonymized accounts and sample data, and hide personal details such as usernames, avatars, emails, tokens, and local file paths.
 7. Check links you changed.
 
 ## Pull request checklist

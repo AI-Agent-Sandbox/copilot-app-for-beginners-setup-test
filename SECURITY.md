@@ -18,10 +18,7 @@ Do not include real tokens, credentials, customer data, or private organization 
 
 ## Course asset safety
 
-Before contributing screenshots, prompts, canvas examples, automation examples, or terminal output, review:
-
-- [Screenshot Capture Guide](appendices/screenshot-capture-guide.md)
-- [Privacy-Safe Course Assets](appendices/privacy-safe-course-assets.md)
+Before contributing screenshots, prompts, canvas examples, automation examples, or terminal output, make sure they are privacy-safe: use anonymized accounts and sample data, and hide personal details such as usernames, avatars, emails, and local file paths.
 
 Never publish:
 
