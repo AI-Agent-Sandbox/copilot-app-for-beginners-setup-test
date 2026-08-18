@@ -585,7 +585,7 @@ function main() {
     "view",
     originRepository,
     "--json",
-    "nameWithOwner,defaultBranchRef",
+    "nameWithOwner,defaultBranchRef,hasIssuesEnabled",
   ]);
   const repo = repoView && repoView.nameWithOwner;
   const defaultBranch = repoView && repoView.defaultBranchRef &&
@@ -632,6 +632,17 @@ function main() {
 
   let setupError = null;
   try {
+    if (repoView.hasIssuesEnabled === false) {
+      if (dryRun) {
+        log("[dry-run] would enable GitHub Issues");
+      } else {
+        log("Enabling GitHub Issues...");
+        run("gh", ["repo", "edit", repo, "--enable-issues"], {
+          ignoreDryRun: true,
+        });
+      }
+    }
+
     if (dryRun) {
       log(`[dry-run] would fetch and update ${defaultBranch}`);
     } else {
