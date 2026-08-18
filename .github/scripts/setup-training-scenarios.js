@@ -18,6 +18,7 @@ This script seeds a fork or disposable training repository with:
 - a PR comment for the empty-state copy review scenario
 
 Run it from the repository root after you fork and clone the course repo.
+GitHub changes target the repository configured as the local origin remote.
 
 Usage:
   node .github/scripts/setup-training-scenarios.js --dry-run
@@ -72,6 +73,24 @@ function commandExists(name) {
   const probe = process.platform === "win32" ? "where" : "which";
   const result = spawnSync(probe, [name], { encoding: "utf8" });
   return result.status === 0;
+}
+
+function parseGitHubRepository(remoteUrl) {
+  const normalized = remoteUrl.trim().replace(/\.git$/i, "");
+  const patterns = [
+    /^https?:\/\/github\.com\/([^/]+)\/([^/]+)$/i,
+    /^git@github\.com:([^/]+)\/([^/]+)$/i,
+    /^ssh:\/\/git@github\.com\/([^/]+)\/([^/]+)$/i,
+  ];
+
+  for (const pattern of patterns) {
+    const match = normalized.match(pattern);
+    if (match) {
+      return `${match[1]}/${match[2]}`;
+    }
+  }
+
+  return "";
 }
 
 function run(file, args, options = {}) {
@@ -553,9 +572,18 @@ function main() {
     run("gh", ["auth", "status"], { quiet: true, ignoreDryRun: true });
   }
 
+  const originUrl = runOutput("git", ["remote", "get-url", "origin"]);
+  const originRepository = parseGitHubRepository(originUrl);
+  if (!originRepository) {
+    throw new Error(
+      `Could not identify a GitHub repository from the origin remote: ${originUrl}`,
+    );
+  }
+
   const repoView = ghJson([
     "repo",
     "view",
+    originRepository,
     "--json",
     "nameWithOwner,defaultBranchRef",
   ]);
@@ -570,6 +598,8 @@ function main() {
       "Could not determine the GitHub repository and its default branch.",
     );
   }
+
+  process.env.GH_REPO = repo;
 
   if (!startBranch) {
     throw new Error(
