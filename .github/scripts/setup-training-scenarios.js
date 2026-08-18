@@ -630,6 +630,18 @@ function main() {
     );
   }
 
+  const workflows = ghJson([
+    "workflow",
+    "list",
+    "--all",
+    "--json",
+    "name,path,state",
+  ]) || [];
+  const bookAppWorkflowActive = workflows.some((workflow) =>
+    workflow.path === ".github/workflows/book-app-web.yml" &&
+    workflow.state === "active"
+  );
+
   let setupError = null;
   try {
     if (repoView.hasIssuesEnabled === false) {
@@ -850,9 +862,15 @@ Course use:
     "- Open the GitHub Copilot app and connect this fork/training repository.",
   );
   log("- Confirm the seeded issues and PRs appear in My work.");
-  log(
-    "- Wait for the failing-check PR workflow to finish before using that lesson.",
-  );
+  if (bookAppWorkflowActive) {
+    log(
+      "- Wait for the failing-check PR workflow to finish before using that lesson.",
+    );
+  } else {
+    log(
+      "- GitHub Actions is not active for this fork. Open its Actions tab on GitHub and enable workflows before the failing-check lesson.",
+    );
+  }
 }
 
 try {
